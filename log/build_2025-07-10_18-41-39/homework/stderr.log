@@ -1,0 +1,14 @@
+In file included from [01m[K/home/user/ros2_teaching/src/homework/src/server.cpp:1[m[K:
+[01m[K/home/user/ros2_teaching/src/homework/include/homework/service_hw.h:36:10:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[Kclient::[m[K’ on member ‘[01m[Kresponse_callback[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   36 |     void [01;31m[Kclient[m[K::response_callback(rclcpp::Client<interfaces::srv::Distance>::SharedFuture future);
+      |          [01;31m[K^~~~~~[m[K
+In file included from [01m[K/home/user/ros2_teaching/src/homework/src/client.cpp:1[m[K:
+[01m[K/home/user/ros2_teaching/src/homework/include/homework/service_hw.h:36:10:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[Kclient::[m[K’ on member ‘[01m[Kresponse_callback[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   36 |     void [01;31m[Kclient[m[K::response_callback(rclcpp::Client<interfaces::srv::Distance>::SharedFuture future);
+      |          [01;31m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/Server.dir/build.make:76: CMakeFiles/Server.dir/src/server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/Server.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/Client.dir/build.make:76: CMakeFiles/Client.dir/src/client.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/Client.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

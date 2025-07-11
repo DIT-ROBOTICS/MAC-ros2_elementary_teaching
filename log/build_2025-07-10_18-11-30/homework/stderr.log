@@ -1,0 +1,14 @@
+[01m[K/home/user/ros2_teaching/src/homework/src/client.cpp:[m[K In member function ‘[01m[Kvoid client::timer_callback()[m[K’:
+[01m[K/home/user/ros2_teaching/src/homework/src/client.cpp:20:21:[m[K [01;31m[Kerror: [m[K‘[01m[Ktemplate<class ServiceT> class rclcpp::Client[m[K’ used without template arguments
+   20 |     while (!rclcpp::[01;31m[KClient[m[K::wait_for_service(1s)) {
+      |                     [01;31m[K^~~~~~[m[K
+[01m[K/home/user/ros2_teaching/src/homework/src/client.cpp:28:27:[m[K [01;31m[Kerror: [m[K‘[01m[Ktemplate<class ServiceT> class rclcpp::Client[m[K’ used without template arguments
+   28 |     auto result = rclcpp::[01;31m[KClient[m[K::async_send_request(request);
+      |                           [01;31m[K^~~~~~[m[K
+[01m[K/home/user/ros2_teaching/src/homework/src/client.cpp:31:51:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+   31 |     if (rclcpp::Client::spin_until_future_complete[01;31m[K([m[Kthis, result) == rclcpp::FutureReturnCode::SUCCESS)
+      |                                                   [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/Client.dir/build.make:76: CMakeFiles/Client.dir/src/client.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/Client.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

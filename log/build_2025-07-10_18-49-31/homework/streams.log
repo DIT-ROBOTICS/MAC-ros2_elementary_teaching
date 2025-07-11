@@ -1,0 +1,29 @@
+[0.012s] Invoking command in '/home/user/ros2_teaching/build/homework': CMAKE_PREFIX_PATH=/home/user/ros2_teaching/install/interfaces:/home/user/ros2_teaching/install/homework:/opt/ros/humble /usr/bin/cmake --build /home/user/ros2_teaching/build/homework -- -j8 -l8
+[0.050s] [35m[1mConsolidate compiler generated dependencies of target Server[0m
+[0.061s] [ 62%] Built target Subscriber
+[0.061s] [ 62%] Built target Client
+[0.061s] [ 75%] Built target Publisher
+[0.065s] [100%] Built target Server
+[0.073s] Invoked command in '/home/user/ros2_teaching/build/homework' returned '0': CMAKE_PREFIX_PATH=/home/user/ros2_teaching/install/interfaces:/home/user/ros2_teaching/install/homework:/opt/ros/humble /usr/bin/cmake --build /home/user/ros2_teaching/build/homework -- -j8 -l8
+[0.081s] Invoking command in '/home/user/ros2_teaching/build/homework': CMAKE_PREFIX_PATH=/home/user/ros2_teaching/install/interfaces:/home/user/ros2_teaching/install/homework:/opt/ros/humble /usr/bin/cmake --install /home/user/ros2_teaching/build/homework
+[0.086s] -- Install configuration: ""
+[0.086s] -- Up-to-date: /home/user/ros2_teaching/install/homework/lib/homework/Publisher
+[0.086s] -- Up-to-date: /home/user/ros2_teaching/install/homework/lib/homework/Subscriber
+[0.086s] -- Up-to-date: /home/user/ros2_teaching/install/homework/lib/homework/Server
+[0.086s] -- Up-to-date: /home/user/ros2_teaching/install/homework/lib/homework/Client
+[0.087s] -- Up-to-date: /home/user/ros2_teaching/install/homework/share/ament_index/resource_index/package_run_dependencies/homework
+[0.087s] -- Up-to-date: /home/user/ros2_teaching/install/homework/share/ament_index/resource_index/parent_prefix_path/homework
+[0.087s] -- Up-to-date: /home/user/ros2_teaching/install/homework/share/homework/environment/ament_prefix_path.sh
+[0.087s] -- Up-to-date: /home/user/ros2_teaching/install/homework/share/homework/environment/ament_prefix_path.dsv
+[0.087s] -- Up-to-date: /home/user/ros2_teaching/install/homework/share/homework/environment/path.sh
+[0.087s] -- Up-to-date: /home/user/ros2_teaching/install/homework/share/homework/environment/path.dsv
+[0.087s] -- Up-to-date: /home/user/ros2_teaching/install/homework/share/homework/local_setup.bash
+[0.087s] -- Up-to-date: /home/user/ros2_teaching/install/homework/share/homework/local_setup.sh
+[0.087s] -- Up-to-date: /home/user/ros2_teaching/install/homework/share/homework/local_setup.zsh
+[0.087s] -- Up-to-date: /home/user/ros2_teaching/install/homework/share/homework/local_setup.dsv
+[0.087s] -- Installing: /home/user/ros2_teaching/install/homework/share/homework/package.dsv
+[0.087s] -- Up-to-date: /home/user/ros2_teaching/install/homework/share/ament_index/resource_index/packages/homework
+[0.087s] -- Up-to-date: /home/user/ros2_teaching/install/homework/share/homework/cmake/homeworkConfig.cmake
+[0.087s] -- Up-to-date: /home/user/ros2_teaching/install/homework/share/homework/cmake/homeworkConfig-version.cmake
+[0.087s] -- Up-to-date: /home/user/ros2_teaching/install/homework/share/homework/package.xml
+[0.088s] Invoked command in '/home/user/ros2_teaching/build/homework' returned '0': CMAKE_PREFIX_PATH=/home/user/ros2_teaching/install/interfaces:/home/user/ros2_teaching/install/homework:/opt/ros/humble /usr/bin/cmake --install /home/user/ros2_teaching/build/homework

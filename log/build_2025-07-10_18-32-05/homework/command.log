@@ -1,0 +1,2 @@
+Invoking command in '/home/user/ros2_teaching/build/homework': CMAKE_PREFIX_PATH=/home/user/ros2_teaching/install/interfaces:/home/user/ros2_teaching/install/homework:/opt/ros/humble /usr/bin/cmake --build /home/user/ros2_teaching/build/homework -- -j8 -l8
+Invoked command in '/home/user/ros2_teaching/build/homework' returned '2': CMAKE_PREFIX_PATH=/home/user/ros2_teaching/install/interfaces:/home/user/ros2_teaching/install/homework:/opt/ros/humble /usr/bin/cmake --build /home/user/ros2_teaching/build/homework -- -j8 -l8

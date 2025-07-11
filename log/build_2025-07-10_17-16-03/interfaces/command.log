@@ -1,0 +1,6 @@
+Invoking command in '/home/user/ros2_teaching/build/interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/user/ros2_teaching/src/interfaces -DCMAKE_INSTALL_PREFIX=/home/user/ros2_teaching/install/interfaces
+Invoked command in '/home/user/ros2_teaching/build/interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/user/ros2_teaching/src/interfaces -DCMAKE_INSTALL_PREFIX=/home/user/ros2_teaching/install/interfaces
+Invoking command in '/home/user/ros2_teaching/build/interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/user/ros2_teaching/build/interfaces -- -j8 -l8
+Invoked command in '/home/user/ros2_teaching/build/interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/user/ros2_teaching/build/interfaces -- -j8 -l8
+Invoking command in '/home/user/ros2_teaching/build/interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/user/ros2_teaching/build/interfaces
+Invoked command in '/home/user/ros2_teaching/build/interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/user/ros2_teaching/build/interfaces

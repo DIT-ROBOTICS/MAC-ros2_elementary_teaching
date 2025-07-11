@@ -1,0 +1,13 @@
+[0.009s] Invoking command in '/home/user/ros2_teaching/build/homework': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/user/ros2_teaching/build/homework -- -j8 -l8
+[0.049s] [35m[1mConsolidate compiler generated dependencies of target Publisher[0m
+[0.049s] [35m[1mConsolidate compiler generated dependencies of target Subscriber[0m
+[0.062s] [ 50%] [32mBuilding CXX object CMakeFiles/Publisher.dir/src/publisher.cpp.o[0m
+[0.062s] [ 75%] Built target Subscriber
+[1.945s] [01m[K/home/user/ros2_teaching/src/homework/src/publisher.cpp:[m[K In constructor ‘[01m[Kpub::pub()[m[K’:
+[1.945s] [01m[K/home/user/ros2_teaching/src/homework/src/publisher.cpp:6:38:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""ms[m[K’
+[1.945s]     6 |     timer_ = this->create_wall_timer([01;31m[K500ms[m[K, std::bind(&pub::timer_callback, this));
+[1.945s]       |                                      [01;31m[K^~~~~[m[K
+[2.592s] gmake[2]: *** [CMakeFiles/Publisher.dir/build.make:76: CMakeFiles/Publisher.dir/src/publisher.cpp.o] Error 1
+[2.592s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/Publisher.dir/all] Error 2
+[2.593s] gmake: *** [Makefile:146: all] Error 2
+[2.594s] Invoked command in '/home/user/ros2_teaching/build/homework' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/user/ros2_teaching/build/homework -- -j8 -l8

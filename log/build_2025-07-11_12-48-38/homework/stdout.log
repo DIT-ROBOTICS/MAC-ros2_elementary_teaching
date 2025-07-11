@@ -1,0 +1,30 @@
+[ 25%] Built target Publisher
+[ 50%] Built target Server
+[ 75%] Built target Subscriber
+[100%] Built target Client
+-- Install configuration: ""
+-- Installing: /home/user/ros2_teaching/install/homework/lib/homework/Publisher
+-- Set runtime path of "/home/user/ros2_teaching/install/homework/lib/homework/Publisher" to ""
+-- Installing: /home/user/ros2_teaching/install/homework/lib/homework/Subscriber
+-- Set runtime path of "/home/user/ros2_teaching/install/homework/lib/homework/Subscriber" to ""
+-- Installing: /home/user/ros2_teaching/install/homework/lib/homework/Server
+-- Set runtime path of "/home/user/ros2_teaching/install/homework/lib/homework/Server" to ""
+-- Installing: /home/user/ros2_teaching/install/homework/lib/homework/Client
+-- Set runtime path of "/home/user/ros2_teaching/install/homework/lib/homework/Client" to ""
+-- Installing: /home/user/ros2_teaching/install/homework/share/homework/launch
+-- Installing: /home/user/ros2_teaching/install/homework/share/homework/launch/launch_hw.launch
+-- Installing: /home/user/ros2_teaching/install/homework/share/ament_index/resource_index/package_run_dependencies/homework
+-- Installing: /home/user/ros2_teaching/install/homework/share/ament_index/resource_index/parent_prefix_path/homework
+-- Installing: /home/user/ros2_teaching/install/homework/share/homework/environment/ament_prefix_path.sh
+-- Installing: /home/user/ros2_teaching/install/homework/share/homework/environment/ament_prefix_path.dsv
+-- Installing: /home/user/ros2_teaching/install/homework/share/homework/environment/path.sh
+-- Installing: /home/user/ros2_teaching/install/homework/share/homework/environment/path.dsv
+-- Installing: /home/user/ros2_teaching/install/homework/share/homework/local_setup.bash
+-- Installing: /home/user/ros2_teaching/install/homework/share/homework/local_setup.sh
+-- Installing: /home/user/ros2_teaching/install/homework/share/homework/local_setup.zsh
+-- Installing: /home/user/ros2_teaching/install/homework/share/homework/local_setup.dsv
+-- Installing: /home/user/ros2_teaching/install/homework/share/homework/package.dsv
+-- Installing: /home/user/ros2_teaching/install/homework/share/ament_index/resource_index/packages/homework
+-- Installing: /home/user/ros2_teaching/install/homework/share/homework/cmake/homeworkConfig.cmake
+-- Installing: /home/user/ros2_teaching/install/homework/share/homework/cmake/homeworkConfig-version.cmake
+-- Installing: /home/user/ros2_teaching/install/homework/share/homework/package.xml

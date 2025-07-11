@@ -1,0 +1,253 @@
+[0.000000] (-) TimerEvent: {}
+[0.000529] (-) JobUnselected: {'identifier': 'interfaces'}
+[0.000565] (homework) JobQueued: {'identifier': 'homework', 'dependencies': OrderedDict([('interfaces', '/home/user/ros2_teaching/install/interfaces')])}
+[0.000584] (homework) JobStarted: {'identifier': 'homework'}
+[0.009305] (homework) JobProgress: {'identifier': 'homework', 'progress': 'cmake'}
+[0.009766] (homework) JobProgress: {'identifier': 'homework', 'progress': 'build'}
+[0.010280] (homework) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/user/ros2_teaching/build/homework', '--', '-j8', '-l8'], 'cwd': '/home/user/ros2_teaching/build/homework', 'env': OrderedDict([('HOSTNAME', 'mac-VivoBook-ASUSLaptop-X515EA-X515EA'), ('GIT_ASKPASS', '/home/user/.vscode-server/bin/2901c5ac6db8a986a5666c3af51ff804d05af0d4/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/user/ros2_teaching/install/interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/user/.vscode-server/bin/2901c5ac6db8a986a5666c3af51ff804d05af0d4/bin/helpers/browser.sh'), ('HOME', '/home/user'), ('OLDPWD', '/home/user'), ('TERM_PROGRAM_VERSION', '1.101.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-269087af-08f0-438a-9291-58edb9f86ff2.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/user/.vscode-server/bin/2901c5ac6db8a986a5666c3af51ff804d05af0d4/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/user/.vscode-server/bin/2901c5ac6db8a986a5666c3af51ff804d05af0d4/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/home/user/ros2_teaching/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-3b6f848d-40a7-46b1-b019-d1b208690474.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/user/.vscode-server/bin/2901c5ac6db8a986a5666c3af51ff804d05af0d4/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/user/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-3b6f848d-40a7-46b1-b019-d1b208690474.sock","/home/user/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XAUTHORITY', '/root/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-ad45c040b6.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-3b6f848d-40a7-46b1-b019-d1b208690474.sock'), ('AMENT_PREFIX_PATH', '/home/user/ros2_teaching/install/interfaces:/home/user/ros2_teaching/install/homework:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ROS_WS', '/home/user/ros2_teaching'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/user/ros2_teaching/build/homework'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/user/ros2_teaching/install/interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/user/ros2_teaching/install/interfaces:/home/user/ros2_teaching/install/homework:/opt/ros/humble')]), 'shell': False}
+[0.050206] (homework) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target Publisher\x1b[0m\n'}
+[0.050450] (homework) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target Subscriber\x1b[0m\n'}
+[0.057193] (homework) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/Client.dir/src/client.cpp.o\x1b[0m\n'}
+[0.057415] (homework) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/Service.dir/src/service.cpp.o\x1b[0m\n'}
+[0.065617] (homework) StdoutLine: {'line': b'[ 50%] Built target Publisher\n'}
+[0.068613] (homework) StdoutLine: {'line': b'[ 75%] Built target Subscriber\n'}
+[0.099856] (-) TimerEvent: {}
+[0.200170] (-) TimerEvent: {}
+[0.300566] (-) TimerEvent: {}
+[0.400854] (-) TimerEvent: {}
+[0.501500] (-) TimerEvent: {}
+[0.602507] (-) TimerEvent: {}
+[0.702841] (-) TimerEvent: {}
+[0.803130] (-) TimerEvent: {}
+[0.903503] (-) TimerEvent: {}
+[1.003878] (-) TimerEvent: {}
+[1.104194] (-) TimerEvent: {}
+[1.204508] (-) TimerEvent: {}
+[1.304829] (-) TimerEvent: {}
+[1.405121] (-) TimerEvent: {}
+[1.505440] (-) TimerEvent: {}
+[1.605779] (-) TimerEvent: {}
+[1.706132] (-) TimerEvent: {}
+[1.806441] (-) TimerEvent: {}
+[1.906897] (-) TimerEvent: {}
+[2.007268] (-) TimerEvent: {}
+[2.107615] (-) TimerEvent: {}
+[2.207944] (-) TimerEvent: {}
+[2.308346] (-) TimerEvent: {}
+[2.339174] (homework) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/src/service.cpp:1\x1b[m\x1b[K:\n'}
+[2.340407] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/include/homework/service_hw.h:38:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs_msgs\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.341130] (homework) StderrLine: {'line': b'   38 |     \x1b[01;31m\x1b[Kgeometry_msgs_msgs\x1b[m\x1b[K::msg::Point point_;\n'}
+[2.341536] (homework) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.342121] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/src/service.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kservice::service()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.342289] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/src/service.cpp:5:86:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids taking the address of an unqualified or parenthesized non-static member function to form a pointer to member function.  Say \xe2\x80\x98\x1b[01m\x1b[K&service::response_callback\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.342375] (homework) StderrLine: {'line': b'    5 |    service_ = this->create_service<interfaces::srv::Distance>("calculate_distance", &\x1b[01;31m\x1b[Kresponse_callback\x1b[m\x1b[K, this);\n'}
+[2.342453] (homework) StderrLine: {'line': b'      |                                                                                      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.342645] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/src/service.cpp:5:62:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kservice::create_service<interfaces::srv::Distance>(const char [19], void (service::*)(std::shared_ptr<interfaces::srv::Distance_Request_<std::allocator<void> > >, std::shared_ptr<interfaces::srv::Distance_Response_<std::allocator<void> > >), service*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.342735] (homework) StderrLine: {'line': b'    5 |    service_ = \x1b[01;31m\x1b[Kthis->create_service<interfaces::srv::Distance>("calculate_distance", &response_callback, this)\x1b[m\x1b[K;\n'}
+[2.342807] (homework) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.342867] (homework) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[2.342925] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[2.342982] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.343043] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/include/homework/service_hw.h:2\x1b[m\x1b[K,\n'}
+[2.343104] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/src/service.cpp:1\x1b[m\x1b[K:\n'}
+[2.343390] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:267:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ServiceT, class CallbackT> typename rclcpp::Service<ServiceT>::SharedPtr rclcpp::Node::create_service(const string&, CallbackT&&, const rmw_qos_profile_t&, rclcpp::CallbackGroup::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.343468] (homework) StderrLine: {'line': b'  267 |   \x1b[01;36m\x1b[Kcreate_service\x1b[m\x1b[K(\n'}
+[2.343531] (homework) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.343593] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:267:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.343656] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/src/service.cpp:5:105:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[K(service*)this\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kservice*\x1b[m\x1b[K\xe2\x80\x99) to type \xe2\x80\x98\x1b[01m\x1b[Kconst rmw_qos_profile_t&\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst rmw_qos_profile_s&\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[2.343720] (homework) StderrLine: {'line': b'    5 |    service_ = this->create_service<interfaces::srv::Distance>("calculate_distance", &response_callback, \x1b[01;36m\x1b[Kthis\x1b[m\x1b[K);\n'}
+[2.344097] (homework) StderrLine: {'line': b'      |                                                                                                         \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.344166] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/src/service.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid service::response_callback(std::shared_ptr<interfaces::srv::Distance_Request_<std::allocator<void> > >, std::shared_ptr<interfaces::srv::Distance_Response_<std::allocator<void> > >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.344345] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/src/service.cpp:10:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kpow(geometry_msgs::msg::Point_<std::allocator<void> >::_x_type&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.344406] (homework) StderrLine: {'line': b'   10 |     response->dis = std::sqrt(\x1b[01;31m\x1b[Kstd::pow(request->point.x)\x1b[m\x1b[K + std::pow(request->point.y));\n'}
+[2.344466] (homework) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K~~~~~~~~^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.344531] (homework) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp:18\x1b[m\x1b[K,\n'}
+[2.344589] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:24\x1b[m\x1b[K,\n'}
+[2.344647] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23\x1b[m\x1b[K,\n'}
+[2.344708] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50\x1b[m\x1b[K,\n'}
+[2.344774] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25\x1b[m\x1b[K,\n'}
+[2.344840] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.344897] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.344956] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.345012] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.345069] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.345125] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.345183] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.345242] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/include/homework/service_hw.h:2\x1b[m\x1b[K,\n'}
+[2.345301] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/src/service.cpp:1\x1b[m\x1b[K:\n'}
+[2.345361] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/cmath:415:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Up> constexpr typename __gnu_cxx::__promote_2<_Tp, _Up>::__type std::pow(_Tp, _Up)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.345420] (homework) StderrLine: {'line': b'  415 |     \x1b[01;36m\x1b[Kpow\x1b[m\x1b[K(_Tp __x, _Up __y)\n'}
+[2.345476] (homework) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.345533] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/cmath:415:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.345590] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/src/service.cpp:10:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[2.345648] (homework) StderrLine: {'line': b'   10 |     response->dis = std::sqrt(\x1b[01;36m\x1b[Kstd::pow(request->point.x)\x1b[m\x1b[K + std::pow(request->point.y));\n'}
+[2.345705] (homework) StderrLine: {'line': b'      |                               \x1b[01;36m\x1b[K~~~~~~~~^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.345768] (homework) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/features.h:486\x1b[m\x1b[K,\n'}
+[2.345833] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:39\x1b[m\x1b[K,\n'}
+[2.345891] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:586\x1b[m\x1b[K,\n'}
+[2.345953] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/csignal:41\x1b[m\x1b[K,\n'}
+[2.346016] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:152\x1b[m\x1b[K,\n'}
+[2.346075] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/include/homework/service_hw.h:2\x1b[m\x1b[K,\n'}
+[2.346135] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/src/service.cpp:1\x1b[m\x1b[K:\n'}
+[2.346195] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/bits/mathcalls.h:140:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kdouble pow(double, double)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.346260] (homework) StderrLine: {'line': b'  140 | \x1b[01;36m\x1b[K__MATHCALL_VEC\x1b[m\x1b[K (pow,, (_Mdouble_ __x, _Mdouble_ __y));\n'}
+[2.346319] (homework) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.346377] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/bits/mathcalls.h:140:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[2.346435] (homework) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp:18\x1b[m\x1b[K,\n'}
+[2.346494] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:24\x1b[m\x1b[K,\n'}
+[2.346552] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23\x1b[m\x1b[K,\n'}
+[2.346614] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50\x1b[m\x1b[K,\n'}
+[2.346672] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25\x1b[m\x1b[K,\n'}
+[2.346731] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.346796] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.346860] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.346919] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.346977] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.347035] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.347092] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.347150] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/include/homework/service_hw.h:2\x1b[m\x1b[K,\n'}
+[2.347209] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/src/service.cpp:1\x1b[m\x1b[K:\n'}
+[2.347269] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/cmath:388:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr float std::pow(float, float)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.347328] (homework) StderrLine: {'line': b'  388 |   \x1b[01;36m\x1b[Kpow\x1b[m\x1b[K(float __x, float __y)\n'}
+[2.347445] (homework) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.347502] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/cmath:388:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[2.347560] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/cmath:392:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr long double std::pow(long double, long double)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.347619] (homework) StderrLine: {'line': b'  392 |   \x1b[01;36m\x1b[Kpow\x1b[m\x1b[K(long double __x, long double __y)\n'}
+[2.347675] (homework) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.347731] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/cmath:392:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[2.347798] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/src/service.cpp:10:68:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kpow(geometry_msgs::msg::Point_<std::allocator<void> >::_y_type&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.347858] (homework) StderrLine: {'line': b'   10 |     response->dis = std::sqrt(std::pow(request->point.x) + \x1b[01;31m\x1b[Kstd::pow(request->point.y)\x1b[m\x1b[K);\n'}
+[2.347914] (homework) StderrLine: {'line': b'      |                                                            \x1b[01;31m\x1b[K~~~~~~~~^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.347974] (homework) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp:18\x1b[m\x1b[K,\n'}
+[2.348032] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:24\x1b[m\x1b[K,\n'}
+[2.348089] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23\x1b[m\x1b[K,\n'}
+[2.348147] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50\x1b[m\x1b[K,\n'}
+[2.348205] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25\x1b[m\x1b[K,\n'}
+[2.348263] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.348320] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.348385] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.348443] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.348502] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.348558] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.348616] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.348673] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/include/homework/service_hw.h:2\x1b[m\x1b[K,\n'}
+[2.348730] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/src/service.cpp:1\x1b[m\x1b[K:\n'}
+[2.348803] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/cmath:415:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Up> constexpr typename __gnu_cxx::__promote_2<_Tp, _Up>::__type std::pow(_Tp, _Up)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.348963] (homework) StderrLine: {'line': b'  415 |     \x1b[01;36m\x1b[Kpow\x1b[m\x1b[K(_Tp __x, _Up __y)\n'}
+[2.349021] (homework) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.349078] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/cmath:415:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.349138] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/src/service.cpp:10:68:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[2.349195] (homework) StderrLine: {'line': b'   10 |     response->dis = std::sqrt(std::pow(request->point.x) + \x1b[01;36m\x1b[Kstd::pow(request->point.y)\x1b[m\x1b[K);\n'}
+[2.349251] (homework) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K~~~~~~~~^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.349310] (homework) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/features.h:486\x1b[m\x1b[K,\n'}
+[2.349367] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:39\x1b[m\x1b[K,\n'}
+[2.349425] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:586\x1b[m\x1b[K,\n'}
+[2.349482] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/csignal:41\x1b[m\x1b[K,\n'}
+[2.349539] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:152\x1b[m\x1b[K,\n'}
+[2.349595] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/include/homework/service_hw.h:2\x1b[m\x1b[K,\n'}
+[2.349653] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/src/service.cpp:1\x1b[m\x1b[K:\n'}
+[2.349710] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/bits/mathcalls.h:140:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kdouble pow(double, double)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.349774] (homework) StderrLine: {'line': b'  140 | \x1b[01;36m\x1b[K__MATHCALL_VEC\x1b[m\x1b[K (pow,, (_Mdouble_ __x, _Mdouble_ __y));\n'}
+[2.349837] (homework) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.349896] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/bits/mathcalls.h:140:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[2.349957] (homework) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp:18\x1b[m\x1b[K,\n'}
+[2.350016] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:24\x1b[m\x1b[K,\n'}
+[2.350078] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23\x1b[m\x1b[K,\n'}
+[2.350138] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50\x1b[m\x1b[K,\n'}
+[2.350195] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25\x1b[m\x1b[K,\n'}
+[2.350252] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.350311] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.350373] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.350430] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.350487] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.350548] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.350608] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.350665] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/include/homework/service_hw.h:2\x1b[m\x1b[K,\n'}
+[2.350723] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/src/service.cpp:1\x1b[m\x1b[K:\n'}
+[2.350791] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/cmath:388:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr float std::pow(float, float)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.350852] (homework) StderrLine: {'line': b'  388 |   \x1b[01;36m\x1b[Kpow\x1b[m\x1b[K(float __x, float __y)\n'}
+[2.350910] (homework) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.350965] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/cmath:388:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[2.351024] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/cmath:392:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr long double std::pow(long double, long double)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.351082] (homework) StderrLine: {'line': b'  392 |   \x1b[01;36m\x1b[Kpow\x1b[m\x1b[K(long double __x, long double __y)\n'}
+[2.351139] (homework) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.351194] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/cmath:392:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[2.351253] (homework) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/src/client.cpp:1\x1b[m\x1b[K:\n'}
+[2.351309] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/include/homework/service_hw.h:38:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs_msgs\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.351368] (homework) StderrLine: {'line': b'   38 |     \x1b[01;31m\x1b[Kgeometry_msgs_msgs\x1b[m\x1b[K::msg::Point point_;\n'}
+[2.351424] (homework) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.351482] (homework) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[2.351544] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[2.351602] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[2.351659] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.351718] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.351781] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.351841] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/include/homework/service_hw.h:2\x1b[m\x1b[K,\n'}
+[2.351901] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/src/client.cpp:1\x1b[m\x1b[K:\n'}
+[2.351961] (homework) StderrLine: {'line': b'/usr/include/c++/11/functional: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kstruct std::_Bind_check_arity<void (client::*)(std::shared_ptr<interfaces::srv::Distance_Request_<std::allocator<void> > >, std::shared_ptr<interfaces::srv::Distance_Response_<std::allocator<void> > >), client*>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.352020] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:768:12:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstruct std::_Bind_helper<false, void (client::*)(std::shared_ptr<interfaces::srv::Distance_Request_<std::allocator<void> > >, std::shared_ptr<interfaces::srv::Distance_Response_<std::allocator<void> > >), client*>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.352080] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:789:5:\x1b[m\x1b[K   required by substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Func, class ... _BoundArgs> typename std::_Bind_helper<std::__is_socketlike<_Func>::value, _Func, _BoundArgs ...>::type std::bind(_Func&&, _BoundArgs&& ...) [with _Func = void (client::*)(std::shared_ptr<interfaces::srv::Distance_Request_<std::allocator<void> > >, std::shared_ptr<interfaces::srv::Distance_Response_<std::allocator<void> > >); _BoundArgs = {client*}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.352145] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/src/client.cpp:6:50:\x1b[m\x1b[K   required from here\n'}
+[2.352204] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:756:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kstatic assertion failed: Wrong number of arguments for pointer-to-member\n'}
+[2.352264] (homework) StderrLine: {'line': b'  755 |       static_assert(_Varargs::\x1b[01;31m\x1b[Kvalue\x1b[m\x1b[K\n'}
+[2.352321] (homework) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K~~~~~\x1b[m\x1b[K\n'}
+[2.352378] (homework) StderrLine: {'line': b'  756 | \x1b[01;31m\x1b[K                    ? sizeof...(_BoundArgs) >= _Arity::value + 1\x1b[m\x1b[K\n'}
+[2.352435] (homework) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.352491] (homework) StderrLine: {'line': b'  757 | \x1b[01;31m\x1b[K                    : sizeof...(_BoundArgs) == _Arity::value + 1\x1b[m\x1b[K,\n'}
+[2.352552] (homework) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.352609] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:756:21:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K(false ? (1 >= (((long unsigned int)std::integral_constant<long unsigned int, 2>::value) + 1)) : (1 == (((long unsigned int)std::integral_constant<long unsigned int, 2>::value) + 1)))\x1b[m\x1b[K\xe2\x80\x99 evaluates to false\n'}
+[2.352957] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/src/client.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kclient::client()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.353060] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/src/client.cpp:6:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kclient::create_wall_timer(std::chrono::seconds, std::_Bind_helper<false, void (client::*)(std::shared_ptr<interfaces::srv::Distance_Request_<std::allocator<void> > >, std::shared_ptr<interfaces::srv::Distance_Response_<std::allocator<void> > >), client*>::type)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.353123] (homework) StderrLine: {'line': b'    6 |    timer_ = \x1b[01;31m\x1b[Kthis->create_wall_timer(1s, std::bind(&client::timer_callback, this))\x1b[m\x1b[K;\n'}
+[2.353238] (homework) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.353296] (homework) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[2.353353] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[2.353410] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.353468] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/include/homework/service_hw.h:2\x1b[m\x1b[K,\n'}
+[2.353524] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/src/client.cpp:1\x1b[m\x1b[K:\n'}
+[2.353582] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:238:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class DurationRepT, class DurationT, class CallbackT> typename rclcpp::WallTimer<CallbackT>::SharedPtr rclcpp::Node::create_wall_timer(std::chrono::duration<_Rep1, _Period1>, CallbackT, rclcpp::CallbackGroup::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.353646] (homework) StderrLine: {'line': b'  238 |   \x1b[01;36m\x1b[Kcreate_wall_timer\x1b[m\x1b[K(\n'}
+[2.353711] (homework) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.353774] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:238:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.353842] (homework) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321\x1b[m\x1b[K,\n'}
+[2.353901] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[2.353961] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[2.354020] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.354079] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/include/homework/service_hw.h:2\x1b[m\x1b[K,\n'}
+[2.354139] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/src/client.cpp:1\x1b[m\x1b[K:\n'}
+[2.354200] (homework) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp: In substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class DurationRepT, class DurationT, class CallbackT> typename rclcpp::WallTimer<CallbackT>::SharedPtr rclcpp::Node::create_wall_timer(std::chrono::duration<_Rep1, _Period1>, CallbackT, rclcpp::CallbackGroup::SharedPtr) [with DurationRepT = long int; DurationT = std::ratio<1>; CallbackT = std::_Bind<void (client::*(client*))(std::shared_ptr<interfaces::srv::Distance_Request_<std::allocator<void> > >, std::shared_ptr<interfaces::srv::Distance_Response_<std::allocator<void> > >)>]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.354266] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/src/client.cpp:6:36:\x1b[m\x1b[K   required from here\n'}
+[2.354326] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:110:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, void>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.354386] (homework) StderrLine: {'line': b'  110 | \x1b[01;31m\x1b[KNode\x1b[m\x1b[K::create_wall_timer(\n'}
+[2.354461] (homework) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.354519] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:110:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, void>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.354580] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:110:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kinvalid template non-type parameter\n'}
+[2.357752] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/src/client.cpp:7:4:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpoint_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kprintf\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.357834] (homework) StderrLine: {'line': b'    7 |    \x1b[01;31m\x1b[Kpoint_\x1b[m\x1b[K.x = 0.0;\n'}
+[2.357893] (homework) StderrLine: {'line': b'      |    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.357951] (homework) StderrLine: {'line': b'      |    \x1b[32m\x1b[Kprintf\x1b[m\x1b[K\n'}
+[2.362548] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/src/client.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid client::timer_callback(std::shared_ptr<interfaces::srv::Distance_Request_<std::allocator<void> > >, std::shared_ptr<interfaces::srv::Distance_Response_<std::allocator<void> > >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.362643] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/src/client.cpp:14:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpoint_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kprintf\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.362703] (homework) StderrLine: {'line': b'   14 |     request->point.x = \x1b[01;31m\x1b[Kpoint_\x1b[m\x1b[K.x;\n'}
+[2.362770] (homework) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.362831] (homework) StderrLine: {'line': b'      |                        \x1b[32m\x1b[Kprintf\x1b[m\x1b[K\n'}
+[2.362889] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/src/client.cpp:17:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.362949] (homework) StderrLine: {'line': b'   17 |     while (!client\x1b[01;31m\x1b[K->\x1b[m\x1b[Kwait_for_service(1s)) {\n'}
+[2.363006] (homework) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.363198] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/src/client.cpp:25:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.363263] (homework) StderrLine: {'line': b'   25 |     auto result = client\x1b[01;31m\x1b[K->\x1b[m\x1b[Kasync_send_request(request);\n'}
+[2.363322] (homework) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.408466] (-) TimerEvent: {}
+[2.508790] (-) TimerEvent: {}
+[2.609137] (-) TimerEvent: {}
+[2.709493] (-) TimerEvent: {}
+[2.756897] (homework) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/Service.dir/build.make:76: CMakeFiles/Service.dir/src/service.cpp.o] Error 1\n'}
+[2.757110] (homework) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/Service.dir/all] Error 2\n'}
+[2.757187] (homework) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[2.809630] (-) TimerEvent: {}
+[2.884552] (homework) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/Client.dir/build.make:76: CMakeFiles/Client.dir/src/client.cpp.o] Error 1\n'}
+[2.884874] (homework) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/Client.dir/all] Error 2\n'}
+[2.885027] (homework) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[2.887248] (homework) CommandEnded: {'returncode': 2}
+[2.897393] (homework) JobEnded: {'identifier': 'homework', 'rc': 2}
+[2.908171] (-) EventReactorShutdown: {}

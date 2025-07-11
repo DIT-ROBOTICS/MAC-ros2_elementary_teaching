@@ -1,0 +1,81 @@
+[0.000000] (-) TimerEvent: {}
+[0.000226] (homework) JobQueued: {'identifier': 'homework', 'dependencies': OrderedDict()}
+[0.000403] (homework) JobStarted: {'identifier': 'homework'}
+[0.006702] (homework) JobProgress: {'identifier': 'homework', 'progress': 'cmake'}
+[0.007206] (homework) JobProgress: {'identifier': 'homework', 'progress': 'build'}
+[0.007891] (homework) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/user/ros2_teaching/build/homework', '--', '-j8', '-l8'], 'cwd': '/home/user/ros2_teaching/build/homework', 'env': OrderedDict([('HOSTNAME', 'mac-VivoBook-ASUSLaptop-X515EA-X515EA'), ('GIT_ASKPASS', '/home/user/.vscode-server/bin/2901c5ac6db8a986a5666c3af51ff804d05af0d4/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/user/.vscode-server/bin/2901c5ac6db8a986a5666c3af51ff804d05af0d4/bin/helpers/browser.sh'), ('HOME', '/home/user'), ('TERM_PROGRAM_VERSION', '1.101.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-7e51a1c3-dfd5-416b-88e2-05230ecd5bfe.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/user/.vscode-server/bin/2901c5ac6db8a986a5666c3af51ff804d05af0d4/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/user/.vscode-server/bin/2901c5ac6db8a986a5666c3af51ff804d05af0d4/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/home/user/ros2_teaching/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-3b6f848d-40a7-46b1-b019-d1b208690474.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/user/.vscode-server/bin/2901c5ac6db8a986a5666c3af51ff804d05af0d4/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-3b6f848d-40a7-46b1-b019-d1b208690474.sock","/home/user/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XAUTHORITY', '/root/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-ad45c040b6.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-3b6f848d-40a7-46b1-b019-d1b208690474.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ROS_WS', '/home/user/ros2_teaching'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/user/ros2_teaching/build/homework'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.048502] (homework) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target Subscriber\x1b[0m\n'}
+[0.048681] (homework) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target Publisher\x1b[0m\n'}
+[0.061832] (homework) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/Publisher.dir/src/publisher.cpp.o\x1b[0m\n'}
+[0.062001] (homework) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/Subscriber.dir/src/subscription.cpp.o\x1b[0m\n'}
+[0.099831] (-) TimerEvent: {}
+[0.200231] (-) TimerEvent: {}
+[0.300605] (-) TimerEvent: {}
+[0.400922] (-) TimerEvent: {}
+[0.501570] (-) TimerEvent: {}
+[0.602167] (-) TimerEvent: {}
+[0.702499] (-) TimerEvent: {}
+[0.802876] (-) TimerEvent: {}
+[0.903292] (-) TimerEvent: {}
+[1.003656] (-) TimerEvent: {}
+[1.103975] (-) TimerEvent: {}
+[1.204303] (-) TimerEvent: {}
+[1.304605] (-) TimerEvent: {}
+[1.404927] (-) TimerEvent: {}
+[1.505285] (-) TimerEvent: {}
+[1.605662] (-) TimerEvent: {}
+[1.706198] (-) TimerEvent: {}
+[1.806518] (-) TimerEvent: {}
+[1.906881] (-) TimerEvent: {}
+[2.007244] (-) TimerEvent: {}
+[2.107579] (-) TimerEvent: {}
+[2.168718] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/src/subscription.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Ksub::sub()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.168945] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/src/subscription.cpp:5:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksubscription_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ksubscription\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.169019] (homework) StderrLine: {'line': b'    5 |     \x1b[01;31m\x1b[Ksubscription_\x1b[m\x1b[K = this->create_subscription<std_msgs::msg::Int64>("topic", 10, std::bind(&sub::topic_callback, this, _1));\n'}
+[2.169083] (homework) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.169144] (homework) StderrLine: {'line': b'      |     \x1b[32m\x1b[Ksubscription\x1b[m\x1b[K\n'}
+[2.180885] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/src/publisher.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kpub::pub()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.181167] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/src/publisher.cpp:6:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kpub::create_wall_timer(int, std::_Bind_helper<false, void (pub::*)(), pub*>::type)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.181240] (homework) StderrLine: {'line': b'    6 |     timer_ = \x1b[01;31m\x1b[Kthis->create_wall_timer(500, std::bind(&pub::timer_callback, this))\x1b[m\x1b[K;\n'}
+[2.181301] (homework) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.181359] (homework) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[2.181418] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[2.181487] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.181546] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/include/homework/topic_hw.h:2\x1b[m\x1b[K,\n'}
+[2.181604] (homework) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/src/publisher.cpp:1\x1b[m\x1b[K:\n'}
+[2.181662] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:238:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class DurationRepT, class DurationT, class CallbackT> typename rclcpp::WallTimer<CallbackT>::SharedPtr rclcpp::Node::create_wall_timer(std::chrono::duration<_Rep1, _Period1>, CallbackT, rclcpp::CallbackGroup::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.181735] (homework) StderrLine: {'line': b'  238 |   \x1b[01;36m\x1b[Kcreate_wall_timer\x1b[m\x1b[K(\n'}
+[2.181794] (homework) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.181852] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:238:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.181911] (homework) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_teaching/src/homework/src/publisher.cpp:6:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::duration<_Rep1, _Period1>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.181969] (homework) StderrLine: {'line': b'    6 |     timer_ = \x1b[01;36m\x1b[Kthis->create_wall_timer(500, std::bind(&pub::timer_callback, this))\x1b[m\x1b[K;\n'}
+[2.182026] (homework) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.207685] (-) TimerEvent: {}
+[2.308046] (-) TimerEvent: {}
+[2.408416] (-) TimerEvent: {}
+[2.508740] (-) TimerEvent: {}
+[2.609100] (-) TimerEvent: {}
+[2.709421] (-) TimerEvent: {}
+[2.809802] (-) TimerEvent: {}
+[2.903423] (homework) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/Publisher.dir/build.make:76: CMakeFiles/Publisher.dir/src/publisher.cpp.o] Error 1\n'}
+[2.903600] (homework) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/Publisher.dir/all] Error 2\n'}
+[2.903643] (homework) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[2.909980] (-) TimerEvent: {}
+[3.010274] (-) TimerEvent: {}
+[3.110583] (-) TimerEvent: {}
+[3.210892] (-) TimerEvent: {}
+[3.311194] (-) TimerEvent: {}
+[3.411528] (-) TimerEvent: {}
+[3.511849] (-) TimerEvent: {}
+[3.612141] (-) TimerEvent: {}
+[3.712488] (-) TimerEvent: {}
+[3.812880] (-) TimerEvent: {}
+[3.913190] (-) TimerEvent: {}
+[4.013611] (-) TimerEvent: {}
+[4.113950] (-) TimerEvent: {}
+[4.126337] (homework) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/Subscriber.dir/build.make:76: CMakeFiles/Subscriber.dir/src/subscription.cpp.o] Error 1\n'}
+[4.127032] (homework) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/Subscriber.dir/all] Error 2\n'}
+[4.127161] (homework) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[4.131866] (homework) CommandEnded: {'returncode': 2}
+[4.141638] (homework) JobEnded: {'identifier': 'homework', 'rc': 2}
+[4.152384] (-) EventReactorShutdown: {}

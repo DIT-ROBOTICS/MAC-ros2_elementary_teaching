@@ -1,0 +1,31 @@
+In file included from [01m[K/home/user/ros2_teaching/src/homework/src/subscription.cpp:1[m[K:
+[01m[K/home/user/ros2_teaching/src/homework/include/homework/topic_hw.h:33:59:[m[K [01;31m[Kerror: [m[Kfield ‘[01m[Krclcpp::Subscription<std_msgs::msg::Int64_<std::allocator<void> > >::SharedPtr subscription::subscription[m[K’ with same name as class [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   33 |     rclcpp::Subscription<std_msgs::msg::Int64>::SharedPtr [01;31m[Ksubscription[m[K;
+      |                                                           [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/user/ros2_teaching/src/homework/src/subscription.cpp:3:1:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Kpublisher[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+    3 | [01;31m[Ksubscription[m[K::publisher() : Node("Subscriber"){
+      | [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/user/ros2_teaching/src/homework/src/subscription.cpp:3:1:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kint subscription::publisher()[m[K’
+[01m[K/home/user/ros2_teaching/src/homework/src/subscription.cpp:3:1:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kint subscription::publisher()[m[K’
+In file included from [01m[K/home/user/ros2_teaching/src/homework/src/subscription.cpp:1[m[K:
+[01m[K/home/user/ros2_teaching/src/homework/include/homework/topic_hw.h:25:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass subscription[m[K’ defined here
+   25 | class [01;36m[Ksubscription[m[K : public rclcpp::Node
+      |       [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/user/ros2_teaching/src/homework/src/subscription.cpp:[m[K In member function ‘[01m[Kvoid subscription::topic_callback(const Int64&)[m[K’:
+[01m[K/home/user/ros2_teaching/src/homework/src/subscription.cpp:11:14:[m[K [01;31m[Kerror: [m[Kassignment of member ‘[01m[Kstd_msgs::msg::Int64_<std::allocator<void> >::data[m[K’ in read-only object
+   11 |     [01;31m[Kmsg.data = i[m[K;
+      |     [01;31m[K~~~~~~~~~^~~[m[K
+In file included from [01m[K/home/user/ros2_teaching/src/homework/src/publisher.cpp:1[m[K:
+[01m[K/home/user/ros2_teaching/src/homework/include/homework/topic_hw.h:33:59:[m[K [01;31m[Kerror: [m[Kfield ‘[01m[Krclcpp::Subscription<std_msgs::msg::Int64_<std::allocator<void> > >::SharedPtr subscription::subscription[m[K’ with same name as class [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   33 |     rclcpp::Subscription<std_msgs::msg::Int64>::SharedPtr [01;31m[Ksubscription[m[K;
+      |                                                           [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/user/ros2_teaching/src/homework/src/publisher.cpp:[m[K In constructor ‘[01m[Kpublisher::publisher()[m[K’:
+[01m[K/home/user/ros2_teaching/src/homework/src/publisher.cpp:6:38:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""ms[m[K’
+    6 |     timer_ = this->create_wall_timer([01;31m[K500ms[m[K, std::bind(&publisher::timer_callback, this));
+      |                                      [01;31m[K^~~~~[m[K
+gmake[2]: *** [CMakeFiles/Subscriber.dir/build.make:76: CMakeFiles/Subscriber.dir/src/subscription.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/Subscriber.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/Publisher.dir/build.make:76: CMakeFiles/Publisher.dir/src/publisher.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/Publisher.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

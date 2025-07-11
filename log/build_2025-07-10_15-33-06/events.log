@@ -1,0 +1,115 @@
+[0.000000] (-) TimerEvent: {}
+[0.000242] (homework) JobQueued: {'identifier': 'homework', 'dependencies': OrderedDict()}
+[0.000433] (homework) JobStarted: {'identifier': 'homework'}
+[0.009566] (homework) JobProgress: {'identifier': 'homework', 'progress': 'cmake'}
+[0.010210] (homework) JobProgress: {'identifier': 'homework', 'progress': 'build'}
+[0.010942] (homework) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/user/ros2_teaching/build/homework', '--', '-j8', '-l8'], 'cwd': '/home/user/ros2_teaching/build/homework', 'env': OrderedDict([('HOSTNAME', 'mac-VivoBook-ASUSLaptop-X515EA-X515EA'), ('GIT_ASKPASS', '/home/user/.vscode-server/bin/2901c5ac6db8a986a5666c3af51ff804d05af0d4/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/user/.vscode-server/bin/2901c5ac6db8a986a5666c3af51ff804d05af0d4/bin/helpers/browser.sh'), ('HOME', '/home/user'), ('TERM_PROGRAM_VERSION', '1.101.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-7e51a1c3-dfd5-416b-88e2-05230ecd5bfe.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/user/.vscode-server/bin/2901c5ac6db8a986a5666c3af51ff804d05af0d4/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/user/.vscode-server/bin/2901c5ac6db8a986a5666c3af51ff804d05af0d4/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/home/user/ros2_teaching/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-3b6f848d-40a7-46b1-b019-d1b208690474.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/user/.vscode-server/bin/2901c5ac6db8a986a5666c3af51ff804d05af0d4/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-3b6f848d-40a7-46b1-b019-d1b208690474.sock","/home/user/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XAUTHORITY', '/root/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-ad45c040b6.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-3b6f848d-40a7-46b1-b019-d1b208690474.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ROS_WS', '/home/user/ros2_teaching'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/user/ros2_teaching/build/homework'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.055367] (homework) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target Subscriber\x1b[0m\n'}
+[0.055640] (homework) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target Publisher\x1b[0m\n'}
+[0.071169] (homework) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/Subscriber.dir/src/subscription.cpp.o\x1b[0m\n'}
+[0.071451] (homework) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/Publisher.dir/src/publisher.cpp.o\x1b[0m\n'}
+[0.099777] (-) TimerEvent: {}
+[0.200052] (-) TimerEvent: {}
+[0.300358] (-) TimerEvent: {}
+[0.400671] (-) TimerEvent: {}
+[0.501045] (-) TimerEvent: {}
+[0.601343] (-) TimerEvent: {}
+[0.701655] (-) TimerEvent: {}
+[0.802020] (-) TimerEvent: {}
+[0.902367] (-) TimerEvent: {}
+[1.002681] (-) TimerEvent: {}
+[1.103022] (-) TimerEvent: {}
+[1.203444] (-) TimerEvent: {}
+[1.303921] (-) TimerEvent: {}
+[1.404261] (-) TimerEvent: {}
+[1.504721] (-) TimerEvent: {}
+[1.605092] (-) TimerEvent: {}
+[1.705456] (-) TimerEvent: {}
+[1.805754] (-) TimerEvent: {}
+[1.906110] (-) TimerEvent: {}
+[2.006491] (-) TimerEvent: {}
+[2.106814] (-) TimerEvent: {}
+[2.207193] (-) TimerEvent: {}
+[2.307481] (-) TimerEvent: {}
+[2.407797] (-) TimerEvent: {}
+[2.508090] (-) TimerEvent: {}
+[2.608388] (-) TimerEvent: {}
+[2.708701] (-) TimerEvent: {}
+[2.808986] (-) TimerEvent: {}
+[2.909366] (-) TimerEvent: {}
+[3.010127] (-) TimerEvent: {}
+[3.110636] (-) TimerEvent: {}
+[3.210989] (-) TimerEvent: {}
+[3.311345] (-) TimerEvent: {}
+[3.411672] (-) TimerEvent: {}
+[3.511981] (-) TimerEvent: {}
+[3.612556] (-) TimerEvent: {}
+[3.713156] (-) TimerEvent: {}
+[3.813977] (-) TimerEvent: {}
+[3.914333] (-) TimerEvent: {}
+[4.014658] (-) TimerEvent: {}
+[4.097729] (homework) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable Publisher\x1b[0m\n'}
+[4.114802] (-) TimerEvent: {}
+[4.215252] (-) TimerEvent: {}
+[4.276211] (homework) StdoutLine: {'line': b'[ 75%] Built target Publisher\n'}
+[4.315462] (-) TimerEvent: {}
+[4.415839] (-) TimerEvent: {}
+[4.516266] (-) TimerEvent: {}
+[4.616713] (-) TimerEvent: {}
+[4.717020] (-) TimerEvent: {}
+[4.817323] (-) TimerEvent: {}
+[4.917619] (-) TimerEvent: {}
+[5.017914] (-) TimerEvent: {}
+[5.118178] (-) TimerEvent: {}
+[5.218469] (-) TimerEvent: {}
+[5.318777] (-) TimerEvent: {}
+[5.419058] (-) TimerEvent: {}
+[5.519325] (-) TimerEvent: {}
+[5.619624] (-) TimerEvent: {}
+[5.719990] (-) TimerEvent: {}
+[5.820303] (-) TimerEvent: {}
+[5.920678] (-) TimerEvent: {}
+[6.021049] (-) TimerEvent: {}
+[6.121338] (-) TimerEvent: {}
+[6.221716] (-) TimerEvent: {}
+[6.322001] (-) TimerEvent: {}
+[6.422275] (-) TimerEvent: {}
+[6.522546] (-) TimerEvent: {}
+[6.622829] (-) TimerEvent: {}
+[6.723097] (-) TimerEvent: {}
+[6.823378] (-) TimerEvent: {}
+[6.923673] (-) TimerEvent: {}
+[7.023980] (-) TimerEvent: {}
+[7.124418] (-) TimerEvent: {}
+[7.191146] (homework) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable Subscriber\x1b[0m\n'}
+[7.224553] (-) TimerEvent: {}
+[7.324995] (-) TimerEvent: {}
+[7.425427] (-) TimerEvent: {}
+[7.525724] (-) TimerEvent: {}
+[7.526083] (homework) StdoutLine: {'line': b'[100%] Built target Subscriber\n'}
+[7.535869] (homework) CommandEnded: {'returncode': 0}
+[7.536557] (homework) JobProgress: {'identifier': 'homework', 'progress': 'install'}
+[7.548423] (homework) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/user/ros2_teaching/build/homework'], 'cwd': '/home/user/ros2_teaching/build/homework', 'env': OrderedDict([('HOSTNAME', 'mac-VivoBook-ASUSLaptop-X515EA-X515EA'), ('GIT_ASKPASS', '/home/user/.vscode-server/bin/2901c5ac6db8a986a5666c3af51ff804d05af0d4/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/user/.vscode-server/bin/2901c5ac6db8a986a5666c3af51ff804d05af0d4/bin/helpers/browser.sh'), ('HOME', '/home/user'), ('TERM_PROGRAM_VERSION', '1.101.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-7e51a1c3-dfd5-416b-88e2-05230ecd5bfe.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/user/.vscode-server/bin/2901c5ac6db8a986a5666c3af51ff804d05af0d4/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/user/.vscode-server/bin/2901c5ac6db8a986a5666c3af51ff804d05af0d4/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/home/user/ros2_teaching/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-3b6f848d-40a7-46b1-b019-d1b208690474.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/user/.vscode-server/bin/2901c5ac6db8a986a5666c3af51ff804d05af0d4/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-3b6f848d-40a7-46b1-b019-d1b208690474.sock","/home/user/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XAUTHORITY', '/root/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-ad45c040b6.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-3b6f848d-40a7-46b1-b019-d1b208690474.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ROS_WS', '/home/user/ros2_teaching'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/user/ros2_teaching/build/homework'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[7.555193] (homework) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.555377] (homework) StdoutLine: {'line': b'-- Installing: /home/user/ros2_teaching/install/homework/lib/homework/Publisher\n'}
+[7.556079] (homework) StdoutLine: {'line': b'-- Set runtime path of "/home/user/ros2_teaching/install/homework/lib/homework/Publisher" to ""\n'}
+[7.556229] (homework) StdoutLine: {'line': b'-- Installing: /home/user/ros2_teaching/install/homework/lib/homework/Subscriber\n'}
+[7.557974] (homework) StdoutLine: {'line': b'-- Set runtime path of "/home/user/ros2_teaching/install/homework/lib/homework/Subscriber" to ""\n'}
+[7.558072] (homework) StdoutLine: {'line': b'-- Installing: /home/user/ros2_teaching/install/homework/share/ament_index/resource_index/package_run_dependencies/homework\n'}
+[7.558186] (homework) StdoutLine: {'line': b'-- Installing: /home/user/ros2_teaching/install/homework/share/ament_index/resource_index/parent_prefix_path/homework\n'}
+[7.558292] (homework) StdoutLine: {'line': b'-- Installing: /home/user/ros2_teaching/install/homework/share/homework/environment/ament_prefix_path.sh\n'}
+[7.558385] (homework) StdoutLine: {'line': b'-- Installing: /home/user/ros2_teaching/install/homework/share/homework/environment/ament_prefix_path.dsv\n'}
+[7.558469] (homework) StdoutLine: {'line': b'-- Installing: /home/user/ros2_teaching/install/homework/share/homework/environment/path.sh\n'}
+[7.558554] (homework) StdoutLine: {'line': b'-- Installing: /home/user/ros2_teaching/install/homework/share/homework/environment/path.dsv\n'}
+[7.558633] (homework) StdoutLine: {'line': b'-- Installing: /home/user/ros2_teaching/install/homework/share/homework/local_setup.bash\n'}
+[7.558714] (homework) StdoutLine: {'line': b'-- Installing: /home/user/ros2_teaching/install/homework/share/homework/local_setup.sh\n'}
+[7.558798] (homework) StdoutLine: {'line': b'-- Installing: /home/user/ros2_teaching/install/homework/share/homework/local_setup.zsh\n'}
+[7.558887] (homework) StdoutLine: {'line': b'-- Installing: /home/user/ros2_teaching/install/homework/share/homework/local_setup.dsv\n'}
+[7.558969] (homework) StdoutLine: {'line': b'-- Installing: /home/user/ros2_teaching/install/homework/share/homework/package.dsv\n'}
+[7.559093] (homework) StdoutLine: {'line': b'-- Installing: /home/user/ros2_teaching/install/homework/share/ament_index/resource_index/packages/homework\n'}
+[7.559192] (homework) StdoutLine: {'line': b'-- Installing: /home/user/ros2_teaching/install/homework/share/homework/cmake/homeworkConfig.cmake\n'}
+[7.559255] (homework) StdoutLine: {'line': b'-- Installing: /home/user/ros2_teaching/install/homework/share/homework/cmake/homeworkConfig-version.cmake\n'}
+[7.559348] (homework) StdoutLine: {'line': b'-- Installing: /home/user/ros2_teaching/install/homework/share/homework/package.xml\n'}
+[7.560737] (homework) CommandEnded: {'returncode': 0}
+[7.574397] (homework) JobEnded: {'identifier': 'homework', 'rc': 0}
+[7.574892] (-) EventReactorShutdown: {}

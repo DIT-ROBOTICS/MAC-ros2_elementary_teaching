@@ -1,0 +1,14 @@
+[01m[K/home/user/ros2_teaching/src/homework/src/client.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Khomework/server_hw.h: No such file or directory
+    1 | #include [01;31m[K"homework/server_hw.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/user/ros2_teaching/src/homework/src/service.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Khomework/server_hw.h: No such file or directory
+    1 | #include [01;31m[K"homework/server_hw.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+compilation terminated.
+gmake[2]: *** [CMakeFiles/Client.dir/build.make:76: CMakeFiles/Client.dir/src/client.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/Service.dir/build.make:76: CMakeFiles/Service.dir/src/service.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/Client.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/Service.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

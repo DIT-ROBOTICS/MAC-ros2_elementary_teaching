@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  Eurobot-inheritance:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        USERNAME: user
+    image: mac781/ros2_teaching:latest
+    container_name: Eurobot-inheritance
+    stdin_open: true
+    tty: true
+    privileged: true
+    network_mode: host
+    working_dir: /home/user/ros2_teaching
+    environment:
+      - DISPLAY=${DISPLAY}
+      - XAUTHORITY=/root/.Xauthority
+      - ROS_WS=/home/user/ros2_teaching
+    volumes:
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+      # Mount X11 server
+      - /d/.Xauthority:/root/.Xauthority
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      # Direct Rendering Infrastructure
+      - /dev:/dev
+      - ../:/home/user/ros2_teaching
+
+    command: /bin/bash

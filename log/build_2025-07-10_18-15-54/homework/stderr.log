@@ -1,0 +1,7 @@
+[01m[K/home/user/ros2_teaching/src/homework/src/client.cpp:[m[K In member function ‘[01m[Kvoid client::timer_callback()[m[K’:
+[01m[K/home/user/ros2_teaching/src/homework/src/client.cpp:31:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class rclcpp::Client<interfaces::srv::Distance>[m[K’ {aka ‘[01m[Kclass rclcpp::Client<interfaces::srv::Distance>[m[K’} has no member named ‘[01m[Kspin_until_future_complete[m[K’
+   31 |     if (client_->[01;31m[Kspin_until_future_complete[m[K(this, result) == rclcpp::FutureReturnCode::SUCCESS)
+      |                  [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/Client.dir/build.make:76: CMakeFiles/Client.dir/src/client.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/Client.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

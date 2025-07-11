@@ -1,0 +1,26 @@
+[35m[1mConsolidate compiler generated dependencies of target Subscriber[0m
+[35m[1mConsolidate compiler generated dependencies of target Publisher[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/Publisher.dir/src/publisher.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/Subscriber.dir/src/subscription.cpp.o[0m
+[01m[K/home/user/ros2_teaching/src/homework/src/publisher.cpp:[m[K In constructor ‘[01m[Kpub::pub()[m[K’:
+[01m[K/home/user/ros2_teaching/src/homework/src/publisher.cpp:6:37:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kpub::create_wall_timer(int, std::_Bind_helper<false, void (pub::*)(), pub*>::type)[m[K’
+    6 |     timer_ = [01;31m[Kthis->create_wall_timer(500, std::bind(&pub::timer_callback, this))[m[K;
+      |              [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/user/ros2_teaching/src/homework/include/homework/topic_hw.h:2[m[K,
+                 from [01m[K/home/user/ros2_teaching/src/homework/src/publisher.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:238:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class DurationRepT, class DurationT, class CallbackT> typename rclcpp::WallTimer<CallbackT>::SharedPtr rclcpp::Node::create_wall_timer(std::chrono::duration<_Rep1, _Period1>, CallbackT, rclcpp::CallbackGroup::SharedPtr)[m[K’
+  238 |   [01;36m[Kcreate_wall_timer[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:238:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/user/ros2_teaching/src/homework/src/publisher.cpp:6:37:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::chrono::duration<_Rep1, _Period1>[m[K’ and ‘[01m[Kint[m[K’
+    6 |     timer_ = [01;36m[Kthis->create_wall_timer(500, std::bind(&pub::timer_callback, this))[m[K;
+      |              [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/Publisher.dir/build.make:76: CMakeFiles/Publisher.dir/src/publisher.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/Publisher.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 75%] [32m[1mLinking CXX executable Subscriber[0m
+[ 75%] Built target Subscriber
+gmake: *** [Makefile:146: all] Error 2
