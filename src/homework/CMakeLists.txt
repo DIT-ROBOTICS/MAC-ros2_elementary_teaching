@@ -10,36 +10,17 @@ find_package(ament_cmake REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(rclcpp REQUIRED)
-find_package(interfaces REQUIRED)
+# TODO: include interfaces files' directories
 
-include_directories(
-  include
-  ${catkin_INCLUDE_DIRS}
-)
+# TODO: include header files' directories
 
-add_executable(Publisher src/publisher.cpp)
-ament_target_dependencies(Publisher rclcpp std_msgs)
-
-add_executable(Subscriber src/subscription.cpp)
-ament_target_dependencies(Subscriber rclcpp std_msgs)
-
-add_executable(Server src/server.cpp)
-ament_target_dependencies(Server rclcpp std_msgs geometry_msgs interfaces)
-
-add_executable(Client src/client.cpp)
-ament_target_dependencies(Client rclcpp std_msgs geometry_msgs interfaces)
+# TODO: add_executable for each node
 
 install(TARGETS
-  Publisher
-  Subscriber
-  Server
-  Client
+  # TODO: add each executable target here
   DESTINATION lib/${PROJECT_NAME})
 
-install(DIRECTORY 
-    launch
-    DESTINATION share/${PROJECT_NAME}
-)
+# TODO: install launch file directory
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
