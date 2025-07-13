@@ -1,4 +1,4 @@
-# MAC-ros2_elementary_teaching
+# MAC-ros2_elementary_teaching_example
 ## HW_1 topic練習
 標頭檔皆放在 /include/homework/topic_hw.h 下
 
