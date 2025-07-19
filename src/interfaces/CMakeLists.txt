@@ -14,11 +14,11 @@ find_package(rosidl_default_generators REQUIRED)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
-rosidl_generate_interfaces(${PROJECT_NAME}
-  "srv/Distance.srv"
+# rosidl_generate_interfaces(${PROJECT_NAME}
+#   "srv/Distance.srv"
   
-  DEPENDENCIES geometry_msgs 
-)
+#   DEPENDENCIES geometry_msgs 
+# )
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

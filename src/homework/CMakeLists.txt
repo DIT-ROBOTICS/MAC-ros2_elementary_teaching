@@ -14,10 +14,10 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(interfaces REQUIRED)
 
 # TODO: include interfaces files' directories
-rosidl_generate_interfaces(${PROJECT_NAME}
-  "../interfaces/srv/Distance.srv"
-  DEPENDENCIES geometry_msgs std_msgs
-)
+# rosidl_generate_interfaces(${PROJECT_NAME}
+#   "../interfaces/srv/Distance.srv"
+#   DEPENDENCIES geometry_msgs std_msgs
+# )
 
 # TODO: include header files' directories
 include_directories(include)
