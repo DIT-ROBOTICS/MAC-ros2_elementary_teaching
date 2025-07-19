@@ -10,15 +10,58 @@ find_package(ament_cmake REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
+find_package(interfaces REQUIRED)
+
 # TODO: include interfaces files' directories
+rosidl_generate_interfaces(${PROJECT_NAME}
+  "../interfaces/srv/Distance.srv"
+  DEPENDENCIES geometry_msgs std_msgs
+)
 
 # TODO: include header files' directories
+include_directories(include)
+
 
 # TODO: add_executable for each node
+add_executable(publisher src/publisher.cpp)
+ament_target_dependencies( publisher
+  rclcpp
+  std_msgs
+)
+add_executable(subscription src/subscription.cpp)
+ament_target_dependencies( subscription
+  rclcpp
+  std_msgs
+)
+# add_executable(client src/client.cpp)
+# ament_target_dependencies( client
+#   rclcpp
+#   std_msgs
+#   geometry_msgs
+#   interfaces
+# )
+# add_executable(server src/server.cpp)
+# ament_target_dependencies( server
+#   rclcpp
+#   std_msgs
+#   geometry_msgs
+#   interfaces
+# )
+
 
 install(TARGETS
   # TODO: add each executable target here
+  publisher
+  subscription
+  # client
+  # server
   DESTINATION lib/${PROJECT_NAME})
+
+install(DIRECTORY
+  include/
+  DESTINATION include/
+)
 
 # TODO: install launch file directory
 
