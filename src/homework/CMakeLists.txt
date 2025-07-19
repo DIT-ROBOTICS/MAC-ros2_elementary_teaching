@@ -16,8 +16,19 @@ find_package(rclcpp REQUIRED)
 
 # TODO: add_executable for each node
 
+include_directories(
+  include
+)
+
+add_executable(publisher src/publisher.cpp)
+ament_target_dependencies(publisher rclcpp std_msgs)
+
+add_executable(subscriber src/subscription.cpp)
+ament_target_dependencies(subscriber rclcpp std_msgs)
+
 install(TARGETS
-  # TODO: add each executable target here
+  publisher
+  subscriber
   DESTINATION lib/${PROJECT_NAME})
 
 # TODO: install launch file directory
