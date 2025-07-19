@@ -1,19 +1,25 @@
 #include "homework/topic_hw.h"
 
-sub::sub() : Node("TODO: node_name"){  
-
-     // TODO: setup a subscriber and timer for the subscriber
+namespace homework
+{
+    SubscriberNode::SubscriberNode() : Node("Subscriber")
+    {
+        subscription_ = create_subscription<std_msgs::msg::Int64>(
+            "/topic", 10,
+            std::bind(&SubscriberNode::topic_callback, this, std::placeholders::_1)
+        );
+    }
 }
 
-void sub::topic_callback(const your_msgs::msg::xxx & msg){
-
-   // TODO: set up the callback function for the subscriber
+void homework::SubscriberNode::topic_callback(const std_msgs::msg::Int64::SharedPtr msg)
+{
+    RCLCPP_INFO(get_logger(), "Subscriber: %ld", msg->data);
 }
 
-int main(int argc, char * argv[]){
-  
-  rclcpp::init(argc, argv);
-  rclcpp::spin(std::make_shared<sub>());
-  rclcpp::shutdown();
-  return 0;
+int main(int argc, char * argv[])
+{
+    rclcpp::init(argc, argv);
+    rclcpp::spin(std::make_shared<homework::SubscriberNode>());
+    rclcpp::shutdown();
+    return 0;
 }
