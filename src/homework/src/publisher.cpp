@@ -4,6 +4,7 @@ pub::pub() : Node("publisher"){
 
     publisher_ = this->create_publisher<std_msgs::msg::Int64>("topic", 10);
     timer_ = this->create_wall_timer(500ms, std::bind(&pub::timer_callback, this));
+    // test
     msg.data = 0;
 }
 
