@@ -1,5 +1,6 @@
 #pragma once
-// TODO: include message type for the topic
+#include "rclcpp/rclcpp.hpp"
+#include "std_msgs/msg/int64.hpp"
 
 #include <chrono>
 #include <functional>
@@ -17,7 +18,9 @@ class pub : public rclcpp::Node{
   private:
     void timer_callback();
 
-    // TODO: create a publisher and timer for the topic
+    rclcpp::Publisher<std_msgs::msg::Int64>::SharedPtr publisher_;
+    rclcpp::TimerBase::SharedPtr timer_;
+    std_msgs::msg::Int64 msg;
 };
 
 class sub : public rclcpp::Node{
@@ -27,5 +30,5 @@ class sub : public rclcpp::Node{
 
   private:
     void topic_callback(const std_msgs::msg::Int64 & msg);
-    // TODO: create a subscriber for the topic
+    rclcpp::Subscription<std_msgs::msg::Int64>::SharedPtr subscription_;
 };
