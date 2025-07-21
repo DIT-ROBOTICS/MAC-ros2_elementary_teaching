@@ -10,13 +10,20 @@ find_package(ament_cmake REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(rclcpp REQUIRED)
+
 # TODO: include interfaces files' directories
 
 # TODO: include header files' directories
 
 # TODO: add_executable for each node
+add_executable(talker src/publisher.cpp) 
+ament_target_dependencies(talker rclcpp std_msgs)
+add_executable(listener src/subscription.cpp) 
+ament_target_dependencies(listener rclcpp std_msgs)
 
 install(TARGETS
+  talker
+  listener
   # TODO: add each executable target here
   DESTINATION lib/${PROJECT_NAME})
 
