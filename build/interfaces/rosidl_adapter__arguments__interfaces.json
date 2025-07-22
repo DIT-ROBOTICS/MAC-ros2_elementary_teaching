@@ -1,6 +1,6 @@
 {
   "package_name": "interfaces",
   "non_idl_tuples": [
-    "/home/user/ros2_teaching/src/interfaces:srv/Distance.srv"
+    "/home/user/MAC-ros2_elementary_teaching/src/interfaces:srv/Distance.srv"
   ]
 }

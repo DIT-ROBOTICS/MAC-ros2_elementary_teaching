@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/ros2_teaching/src/homework
+CMAKE_SOURCE_DIR = /home/user/MAC-ros2_elementary_teaching/src/homework
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/ros2_teaching/build/homework
+CMAKE_BINARY_DIR = /home/user/MAC-ros2_elementary_teaching/build/homework
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/ros2_teaching/build/homework/CMakeFiles /home/user/ros2_teaching/build/homework//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/MAC-ros2_elementary_teaching/build/homework/CMakeFiles /home/user/MAC-ros2_elementary_teaching/build/homework//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/ros2_teaching/build/homework/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/MAC-ros2_elementary_teaching/build/homework/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -198,87 +198,37 @@ homework_uninstall/fast:
 .PHONY : homework_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named Publisher
+# Target rules for targets named publisher
 
 # Build rule for target.
-Publisher: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Publisher
-.PHONY : Publisher
+publisher: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 publisher
+.PHONY : publisher
 
 # fast build rule for target.
-Publisher/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Publisher.dir/build.make CMakeFiles/Publisher.dir/build
-.PHONY : Publisher/fast
+publisher/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/build
+.PHONY : publisher/fast
 
 #=============================================================================
-# Target rules for targets named Subscriber
+# Target rules for targets named subscription
 
 # Build rule for target.
-Subscriber: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Subscriber
-.PHONY : Subscriber
+subscription: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 subscription
+.PHONY : subscription
 
 # fast build rule for target.
-Subscriber/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Subscriber.dir/build.make CMakeFiles/Subscriber.dir/build
-.PHONY : Subscriber/fast
-
-#=============================================================================
-# Target rules for targets named Server
-
-# Build rule for target.
-Server: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Server
-.PHONY : Server
-
-# fast build rule for target.
-Server/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/build
-.PHONY : Server/fast
-
-#=============================================================================
-# Target rules for targets named Client
-
-# Build rule for target.
-Client: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Client
-.PHONY : Client
-
-# fast build rule for target.
-Client/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/build
-.PHONY : Client/fast
-
-src/client.o: src/client.cpp.o
-.PHONY : src/client.o
-
-# target to build an object file
-src/client.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/client.cpp.o
-.PHONY : src/client.cpp.o
-
-src/client.i: src/client.cpp.i
-.PHONY : src/client.i
-
-# target to preprocess a source file
-src/client.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/client.cpp.i
-.PHONY : src/client.cpp.i
-
-src/client.s: src/client.cpp.s
-.PHONY : src/client.s
-
-# target to generate assembly for a file
-src/client.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/client.cpp.s
-.PHONY : src/client.cpp.s
+subscription/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscription.dir/build.make CMakeFiles/subscription.dir/build
+.PHONY : subscription/fast
 
 src/publisher.o: src/publisher.cpp.o
 .PHONY : src/publisher.o
 
 # target to build an object file
 src/publisher.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Publisher.dir/build.make CMakeFiles/Publisher.dir/src/publisher.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/src/publisher.cpp.o
 .PHONY : src/publisher.cpp.o
 
 src/publisher.i: src/publisher.cpp.i
@@ -286,7 +236,7 @@ src/publisher.i: src/publisher.cpp.i
 
 # target to preprocess a source file
 src/publisher.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Publisher.dir/build.make CMakeFiles/Publisher.dir/src/publisher.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/src/publisher.cpp.i
 .PHONY : src/publisher.cpp.i
 
 src/publisher.s: src/publisher.cpp.s
@@ -294,39 +244,15 @@ src/publisher.s: src/publisher.cpp.s
 
 # target to generate assembly for a file
 src/publisher.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Publisher.dir/build.make CMakeFiles/Publisher.dir/src/publisher.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/src/publisher.cpp.s
 .PHONY : src/publisher.cpp.s
-
-src/server.o: src/server.cpp.o
-.PHONY : src/server.o
-
-# target to build an object file
-src/server.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/server.cpp.o
-.PHONY : src/server.cpp.o
-
-src/server.i: src/server.cpp.i
-.PHONY : src/server.i
-
-# target to preprocess a source file
-src/server.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/server.cpp.i
-.PHONY : src/server.cpp.i
-
-src/server.s: src/server.cpp.s
-.PHONY : src/server.s
-
-# target to generate assembly for a file
-src/server.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/server.cpp.s
-.PHONY : src/server.cpp.s
 
 src/subscription.o: src/subscription.cpp.o
 .PHONY : src/subscription.o
 
 # target to build an object file
 src/subscription.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Subscriber.dir/build.make CMakeFiles/Subscriber.dir/src/subscription.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscription.dir/build.make CMakeFiles/subscription.dir/src/subscription.cpp.o
 .PHONY : src/subscription.cpp.o
 
 src/subscription.i: src/subscription.cpp.i
@@ -334,7 +260,7 @@ src/subscription.i: src/subscription.cpp.i
 
 # target to preprocess a source file
 src/subscription.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Subscriber.dir/build.make CMakeFiles/Subscriber.dir/src/subscription.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscription.dir/build.make CMakeFiles/subscription.dir/src/subscription.cpp.i
 .PHONY : src/subscription.cpp.i
 
 src/subscription.s: src/subscription.cpp.s
@@ -342,7 +268,7 @@ src/subscription.s: src/subscription.cpp.s
 
 # target to generate assembly for a file
 src/subscription.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Subscriber.dir/build.make CMakeFiles/Subscriber.dir/src/subscription.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscription.dir/build.make CMakeFiles/subscription.dir/src/subscription.cpp.s
 .PHONY : src/subscription.cpp.s
 
 # Help Target
@@ -360,19 +286,11 @@ help:
 	@echo "... test"
 	@echo "... homework_uninstall"
 	@echo "... uninstall"
-	@echo "... Client"
-	@echo "... Publisher"
-	@echo "... Server"
-	@echo "... Subscriber"
-	@echo "... src/client.o"
-	@echo "... src/client.i"
-	@echo "... src/client.s"
+	@echo "... publisher"
+	@echo "... subscription"
 	@echo "... src/publisher.o"
 	@echo "... src/publisher.i"
 	@echo "... src/publisher.s"
-	@echo "... src/server.o"
-	@echo "... src/server.i"
-	@echo "... src/server.s"
 	@echo "... src/subscription.o"
 	@echo "... src/subscription.i"
 	@echo "... src/subscription.s"

@@ -11,13 +11,20 @@ find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(rclcpp REQUIRED)
 # TODO: include interfaces files' directories
-
+include_directories(include)
 # TODO: include header files' directories
 
 # TODO: add_executable for each node
+add_executable(publisher src/publisher.cpp)
+ament_target_dependencies(publisher rclcpp std_msgs)
+
+add_executable(subscription src/subscription.cpp)
+ament_target_dependencies(subscription rclcpp std_msgs)
 
 install(TARGETS
   # TODO: add each executable target here
+  publisher
+  subscription
   DESTINATION lib/${PROJECT_NAME})
 
 # TODO: install launch file directory

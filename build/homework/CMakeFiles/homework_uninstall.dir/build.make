@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/ros2_teaching/src/homework
+CMAKE_SOURCE_DIR = /home/user/MAC-ros2_elementary_teaching/src/homework
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/ros2_teaching/build/homework
+CMAKE_BINARY_DIR = /home/user/MAC-ros2_elementary_teaching/build/homework
 
 # Utility rule file for homework_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/homework_uninstall.dir/compiler_depend.make
 include CMakeFiles/homework_uninstall.dir/progress.make
 
 CMakeFiles/homework_uninstall:
-	/usr/bin/cmake -P /home/user/ros2_teaching/build/homework/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/user/MAC-ros2_elementary_teaching/build/homework/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 homework_uninstall: CMakeFiles/homework_uninstall
 homework_uninstall: CMakeFiles/homework_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/homework_uninstall.dir/clean:
 .PHONY : CMakeFiles/homework_uninstall.dir/clean
 
 CMakeFiles/homework_uninstall.dir/depend:
-	cd /home/user/ros2_teaching/build/homework && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/ros2_teaching/src/homework /home/user/ros2_teaching/src/homework /home/user/ros2_teaching/build/homework /home/user/ros2_teaching/build/homework /home/user/ros2_teaching/build/homework/CMakeFiles/homework_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/user/MAC-ros2_elementary_teaching/build/homework && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/MAC-ros2_elementary_teaching/src/homework /home/user/MAC-ros2_elementary_teaching/src/homework /home/user/MAC-ros2_elementary_teaching/build/homework /home/user/MAC-ros2_elementary_teaching/build/homework /home/user/MAC-ros2_elementary_teaching/build/homework/CMakeFiles/homework_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/homework_uninstall.dir/depend
 
