@@ -26,6 +26,6 @@ services:
       - /tmp/.X11-unix:/tmp/.X11-unix:rw
       # Direct Rendering Infrastructure
       - /dev:/dev
-      - /home/ling/Desktop/DIT/DIT_summer_inheritance_/MAC-ros2_elementary_teaching
+      - ..:/home/ling/Desktop/DIT/DIT_summer_inheritance_/MAC-ros2_elementary_teaching
 
     command: /bin/bash
