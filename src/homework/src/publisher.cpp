@@ -1,9 +1,6 @@
 #include "homework/topic_hw.h"
 
-pub::pub() : Node("pubilsher_node") {
-    // TODO: setup a publisher and timer for the publisher
-    pub()
-    : rclcpp::Node("publisher_node"), count_(0){
+pub::pub() : Node("publisher_node"), count_(0) {
     publisher_ = this->create_publisher<std_msgs::msg::Int64>("topic_name", 10);
     // Create a timer that calls the timer_callback function every second
     timer_ = this->create_wall_timer(500ms, std::bind(&pub::timer_callback, this)); 

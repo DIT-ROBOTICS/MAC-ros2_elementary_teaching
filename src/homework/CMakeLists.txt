@@ -13,13 +13,23 @@ find_package(rclcpp REQUIRED)
 
 # TODO: include interfaces files' directories
 
-# TODO: include header files' directories
+# Include header files' directories
+include_directories(include)
 
-# TODO: add_executable for each node
-add_executable(talker src/publisher.cpp) 
-ament_target_dependencies(talker rclcpp std_msgs)
-add_executable(listener src/subscription.cpp) 
-ament_target_dependencies(listener rclcpp std_msgs)
+# Add executables
+add_executable(talker src/publisher.cpp)
+add_executable(listener src/subscription.cpp)
+
+# Add dependencies
+ament_target_dependencies(talker
+  rclcpp
+  std_msgs
+)
+
+ament_target_dependencies(listener
+  rclcpp
+  std_msgs
+)
 
 install(TARGETS
   talker

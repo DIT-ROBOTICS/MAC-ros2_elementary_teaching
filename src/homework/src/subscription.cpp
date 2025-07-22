@@ -12,7 +12,7 @@ sub::sub() : Node("subscriber_node") {
     RCLCPP_INFO(this->get_logger(), "Subscriber node initialized and waiting for messages.");
 }
 
-void sub::topic_callback(const your_msgs::msg::xxx & msg){
+void sub::topic_callback(const std_msgs::msg::Int64 & msg){
 
    // TODO: set up the callback function for the subscriber
     RCLCPP_INFO(this->get_logger(), "Received message: '%ld'", msg.data);

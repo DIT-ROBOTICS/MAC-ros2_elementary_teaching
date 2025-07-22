@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/ros2_teaching/src/homework
+CMAKE_SOURCE_DIR = /home/ling/Desktop/DIT/DIT_summer_inheritance_/MAC-ros2_elementary_teaching/src/homework
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/ros2_teaching/build/homework
+CMAKE_BINARY_DIR = /home/ling/Desktop/DIT/DIT_summer_inheritance_/MAC-ros2_elementary_teaching/build/homework
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/user/ros2_teaching/build/homework && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/ros2_teaching/src/homework /home/user/ros2_teaching/src/homework /home/user/ros2_teaching/build/homework /home/user/ros2_teaching/build/homework /home/user/ros2_teaching/build/homework/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ling/Desktop/DIT/DIT_summer_inheritance_/MAC-ros2_elementary_teaching/build/homework && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ling/Desktop/DIT/DIT_summer_inheritance_/MAC-ros2_elementary_teaching/src/homework /home/ling/Desktop/DIT/DIT_summer_inheritance_/MAC-ros2_elementary_teaching/src/homework /home/ling/Desktop/DIT/DIT_summer_inheritance_/MAC-ros2_elementary_teaching/build/homework /home/ling/Desktop/DIT/DIT_summer_inheritance_/MAC-ros2_elementary_teaching/build/homework /home/ling/Desktop/DIT/DIT_summer_inheritance_/MAC-ros2_elementary_teaching/build/homework/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

@@ -3,8 +3,8 @@
 <package format="3">
   <name>homework</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="user@todo.todo">user</maintainer>
+  <description>topic_test</description>
+  <maintainer email="royling1010@gmail.com">user</maintainer>
   <license>Apache-2.0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
@@ -12,9 +12,8 @@
   <depend>std_msgs</depend>
   <depend>geometry_msgs</depend>
   <depend>rclcpp</depend>
-  <depend>interfaces</depend>
-  <exec_depend>launch_hw</exec_depend>
-
+  <!-- TODO: add dependency for interfaces-->
+  <!-- TODO: add execute dependency for launch file-->
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
