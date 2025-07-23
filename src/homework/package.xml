@@ -13,6 +13,7 @@
   <depend>geometry_msgs</depend>
   <depend>rclcpp</depend>
   <!-- TODO: add dependency for interfaces-->
+  <depend>interfaces</depend>
   <!-- TODO: add execute dependency for launch file-->
 
   <test_depend>ament_lint_auto</test_depend>
