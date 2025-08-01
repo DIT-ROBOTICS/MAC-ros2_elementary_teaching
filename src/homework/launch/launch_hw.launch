@@ -1,7 +1,0 @@
-<launch>
-
-    <!-- TODO: rename server node to Tower -->
-    <!-- TODO: rename client node to Chassis -->
-    <!-- TODO: rename topic name to /number -->
-
-</launch>

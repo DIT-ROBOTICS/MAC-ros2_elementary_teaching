@@ -1,14 +1,14 @@
 <launch>
 
-    <node pkg="homework" exec="Client" name="Chassis"/>
-    <node pkg="homework" exec="Server" name="Lidar"/>
+    <node pkg = "homework" exec = "Client" name = "Chassis"/>
+    <node pkg = "homework" exec = "Server" name = "Tower"/>
 
-    <node pkg="homework" exec="Publisher" name="publisher">
-        <remap from="/topic" to="/number"/>
+    <node pkg = "homework" exec = "Publisher" name = "publisher">
+        <remap from = "/topic" to "/number"/>
     </node>
 
-    <node pkg="homework" exec="Subscriber" name="subscription">
-        <remap from="/topic" to="/number"/>
+    <node pkg = "homework" exec = "Subscriber" name = "subscription">
+        <remap from = "/topic" to "/number"/>
     </node>
 
 </launch>
