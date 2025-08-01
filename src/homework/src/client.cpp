@@ -2,7 +2,7 @@
 
 using namespace std::chrono_literals;
 
-client::client() : Node("TODO: node_name"){
+client::client() : Node("Client"){
 
     // TODO: setup a the timer and client for the client
     client_ = this->create_client<interfaces::srv::Distance>("service");
@@ -19,13 +19,14 @@ void client::timer_callback(){
     request->point.x = point_.x;
     request->point.y = point_.y;
 
+    // send request -> client to server
     auto future = client_->async_send_request(request,std::bind(&client::response_callback, this, std::placeholders::_1));
 
     point_.x += 1.0;
     point_.y += 2.0;
 }
 
-void client::response_callback(rclcpp::Client<interfaces::srv::Distance>::SharedFuture future){
+void client::response_callback(rclcpp::Client<interfaces::srv::Distance>::SharedFuture future){    // <--- _1
     auto response = future.get();
     RCLCPP_INFO(this->get_logger(), "distance: %lf", response->dis);
 }
