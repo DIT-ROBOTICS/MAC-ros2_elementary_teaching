@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MAC-ros2_elementary_teaching_example
 ## HW_1 topic練習
 標頭檔皆放在 /include/homework/topic_hw.h 下
@@ -35,3 +36,32 @@
 一次開啟前兩次作業的四個node
 - 檔名：launch_hw.launch
 - 功能：將HW_1的topic名改成/number，將HW_2的client node名改成Chassis; server node名改成Tower
+=======
+# MAC-ros2_elementary_teaching
+## Workflow
+
+1. Clone the repository:
+   ```bash
+   git clone -b template https://github.com/DIT-ROBOTICS/MAC-ros2_elementary_teaching.git
+   ```
+2. build container: 
+   ```bash
+   cd /ros2_teaching/docker
+   docker build .
+   docker compose up
+   ```
+3. enter container
+   ```bash
+   source /opt/ros/humble/setup.bash
+   echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+   source install/setup.bash
+   echo "source install/setup.bash" >> ~/.bashrc
+   colcon build
+   ```
+4. create branch from template
+   ```bash
+   git checkout -b your_branch
+   ```
+ 後續寫作業時接在 your_branch 修改，要交作業時再 push 上來，your_branch 名稱用 github 帳號名 +_branch
+ 寫作業的方式是修改程式中的"TO DO"，使其符合作業需求
+>>>>>>> origin/Latuuuuu_branch

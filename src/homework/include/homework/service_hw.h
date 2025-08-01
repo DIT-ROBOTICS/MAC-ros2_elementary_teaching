@@ -1,8 +1,5 @@
 #pragma once
-#include "rclcpp/rclcpp.hpp"
-#include "geometry_msgs/msg/point.hpp"
-#include "std_msgs/msg/float32.hpp"
-#include "interfaces/srv/distance.hpp"
+// TODO: include message and service type for the service
 
 #include <chrono>
 #include <functional>
@@ -20,10 +17,9 @@ class server : public rclcpp::Node{
     server();
 
   private:
-    void response_callback(const std::shared_ptr<interfaces::srv::Distance::Request> request,
-      std::shared_ptr<interfaces::srv::Distance::Response> response);
+    // TODO: define the callback function for the server
 
-    rclcpp::Service<interfaces::srv::Distance>::SharedPtr server_;
+    // TODO: create a server for the service
 };
 
 class client : public rclcpp::Node{
@@ -32,10 +28,7 @@ class client : public rclcpp::Node{
     client();
 
   private:
-    void timer_callback();
-    void response_callback(rclcpp::Client<interfaces::srv::Distance>::SharedFuture future);
+    // TODO: define the timer and callback function for the server
 
-    rclcpp::Client<interfaces::srv::Distance>::SharedPtr client_;
-    rclcpp::TimerBase::SharedPtr timer_;
-    geometry_msgs::msg::Point point_;
+    // TODO: create a timer and client for the service
 };

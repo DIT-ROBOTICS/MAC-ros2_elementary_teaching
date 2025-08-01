@@ -1,16 +1,11 @@
 #include "homework/service_hw.h"
 
-server::server() : Node("Server"){
+server::server() : Node("TODO: node_name"){
 
-   server_ = this->create_service<interfaces::srv::Distance>("service", std::bind(&server::response_callback, this, _1, _2));
+   // TODO: setup a server for the server
 }
-void server::response_callback(const std::shared_ptr<interfaces::srv::Distance::Request> request,
-    std::shared_ptr<interfaces::srv::Distance::Response> response){
 
-    response->dis = std::sqrt(std::pow(request->point.x, 2) + std::pow(request->point.y, 2));
-    RCLCPP_INFO(this->get_logger(), "request: x = %lf" " y = %lf",request->point.x, request->point.y);
-    RCLCPP_INFO(this->get_logger(), "response = [%lf]", response->dis);
-}
+// TODO: make the callback function for the server
 
 int main(int argc, char **argv){
 
