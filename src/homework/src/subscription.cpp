@@ -2,12 +2,12 @@
 
 sub::sub() : Node("Subscriber"){
 
-    subscription_ = this->create_subscription<std_msgs::msg::Int64>("topic", 10, std::bind(&sub::topic_callback, this, _1));
+    subscription_ = this->create_subscription<std_msgs::msg::Int64>("/topic", 10, std::bind(&sub::topic_callback, this, _1));
 }
 
 void sub::topic_callback(const std_msgs::msg::Int64 & msg){
 
-    RCLCPP_INFO(this->get_logger(), "Subscribering: '%ld'", msg.data);
+    RCLCPP_INFO(this->get_logger(), "Subscribing: '%ld'", msg.data);
 }
 
 int main(int argc, char * argv[]){
