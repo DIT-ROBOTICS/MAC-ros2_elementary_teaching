@@ -3,7 +3,7 @@
 
 1. Clone the repository:
    ```bash
-   git clone -b main https://github.com/DIT-ROBOTICS/MAC-ros2_elementary_teaching.git
+   git clone -b template https://github.com/DIT-ROBOTICS/MAC-ros2_elementary_teaching.git
    ```
 2. build container: 
    ```bash
