@@ -2,15 +2,18 @@
 // with input from interfaces/srv/Distance.srv
 // generated code does not contain a copyright notice
 
-#include "geometry_msgs/msg/Point.idl"
 
 module interfaces {
   module srv {
+    @verbatim (language="comment", text=
+      "TODO: your request")
     struct Distance_Request {
-      geometry_msgs::msg::Point point;
+      uint8 structure_needs_at_least_one_member;
     };
+    @verbatim (language="comment", text=
+      "TODO: your response")
     struct Distance_Response {
-      float dis;
+      uint8 structure_needs_at_least_one_member;
     };
   };
 };

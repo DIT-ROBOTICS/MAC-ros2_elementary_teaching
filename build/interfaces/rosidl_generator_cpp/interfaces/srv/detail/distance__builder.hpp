@@ -18,26 +18,6 @@ namespace interfaces
 namespace srv
 {
 
-namespace builder
-{
-
-class Init_Distance_Request_point
-{
-public:
-  Init_Distance_Request_point()
-  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
-  {}
-  ::interfaces::srv::Distance_Request point(::interfaces::srv::Distance_Request::_point_type arg)
-  {
-    msg_.point = std::move(arg);
-    return std::move(msg_);
-  }
-
-private:
-  ::interfaces::srv::Distance_Request msg_;
-};
-
-}  // namespace builder
 
 }  // namespace srv
 
@@ -48,7 +28,7 @@ template<>
 inline
 auto build<::interfaces::srv::Distance_Request>()
 {
-  return interfaces::srv::builder::Init_Distance_Request_point();
+  return ::interfaces::srv::Distance_Request(rosidl_runtime_cpp::MessageInitialization::ZERO);
 }
 
 }  // namespace interfaces
@@ -60,26 +40,6 @@ namespace interfaces
 namespace srv
 {
 
-namespace builder
-{
-
-class Init_Distance_Response_dis
-{
-public:
-  Init_Distance_Response_dis()
-  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
-  {}
-  ::interfaces::srv::Distance_Response dis(::interfaces::srv::Distance_Response::_dis_type arg)
-  {
-    msg_.dis = std::move(arg);
-    return std::move(msg_);
-  }
-
-private:
-  ::interfaces::srv::Distance_Response msg_;
-};
-
-}  // namespace builder
 
 }  // namespace srv
 
@@ -90,7 +50,7 @@ template<>
 inline
 auto build<::interfaces::srv::Distance_Response>()
 {
-  return interfaces::srv::builder::Init_Distance_Response_dis();
+  return ::interfaces::srv::Distance_Response(rosidl_runtime_cpp::MessageInitialization::ZERO);
 }
 
 }  // namespace interfaces

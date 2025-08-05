@@ -8,7 +8,9 @@ pub::pub() : Node("Publisher"){
 }
 
 void pub::timer_callback(){
-    // TODO: build the callback function for the timer which publishes messages
+    RCLCPP_INFO(this->get_logger(), "Publishing: '%ld'", msg.data);
+    publisher_->publish(msg);
+    msg.data++;
 }
 
 int main(int argc, char * argv[]){

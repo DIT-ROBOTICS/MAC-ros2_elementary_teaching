@@ -15,10 +15,6 @@
 #include "rosidl_runtime_cpp/message_initialization.hpp"
 
 
-// Include directives for member types
-// Member 'point'
-#include "geometry_msgs/msg/detail/point__struct.hpp"
-
 #ifndef _WIN32
 # define DEPRECATED__interfaces__srv__Distance_Request __attribute__((deprecated))
 #else
@@ -38,29 +34,29 @@ struct Distance_Request_
   using Type = Distance_Request_<ContainerAllocator>;
 
   explicit Distance_Request_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : point(_init)
   {
-    (void)_init;
+    if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
+      rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
+    {
+      this->structure_needs_at_least_one_member = 0;
+    }
   }
 
   explicit Distance_Request_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : point(_alloc, _init)
   {
-    (void)_init;
+    (void)_alloc;
+    if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
+      rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
+    {
+      this->structure_needs_at_least_one_member = 0;
+    }
   }
 
   // field types and members
-  using _point_type =
-    geometry_msgs::msg::Point_<ContainerAllocator>;
-  _point_type point;
+  using _structure_needs_at_least_one_member_type =
+    uint8_t;
+  _structure_needs_at_least_one_member_type structure_needs_at_least_one_member;
 
-  // setters for named parameter idiom
-  Type & set__point(
-    const geometry_msgs::msg::Point_<ContainerAllocator> & _arg)
-  {
-    this->point = _arg;
-    return *this;
-  }
 
   // constant declarations
 
@@ -104,7 +100,7 @@ struct Distance_Request_
   // comparison operators
   bool operator==(const Distance_Request_ & other) const
   {
-    if (this->point != other.point) {
+    if (this->structure_needs_at_least_one_member != other.structure_needs_at_least_one_member) {
       return false;
     }
     return true;
@@ -149,7 +145,7 @@ struct Distance_Response_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->dis = 0.0f;
+      this->structure_needs_at_least_one_member = 0;
     }
   }
 
@@ -159,22 +155,15 @@ struct Distance_Response_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->dis = 0.0f;
+      this->structure_needs_at_least_one_member = 0;
     }
   }
 
   // field types and members
-  using _dis_type =
-    float;
-  _dis_type dis;
+  using _structure_needs_at_least_one_member_type =
+    uint8_t;
+  _structure_needs_at_least_one_member_type structure_needs_at_least_one_member;
 
-  // setters for named parameter idiom
-  Type & set__dis(
-    const float & _arg)
-  {
-    this->dis = _arg;
-    return *this;
-  }
 
   // constant declarations
 
@@ -218,7 +207,7 @@ struct Distance_Response_
   // comparison operators
   bool operator==(const Distance_Response_ & other) const
   {
-    if (this->dis != other.dis) {
+    if (this->structure_needs_at_least_one_member != other.structure_needs_at_least_one_member) {
       return false;
     }
     return true;

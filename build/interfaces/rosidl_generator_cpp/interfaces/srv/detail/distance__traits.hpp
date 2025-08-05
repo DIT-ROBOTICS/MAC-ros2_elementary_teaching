@@ -14,10 +14,6 @@
 #include "interfaces/srv/detail/distance__struct.hpp"
 #include "rosidl_runtime_cpp/traits.hpp"
 
-// Include directives for member types
-// Member 'point'
-#include "geometry_msgs/msg/detail/point__traits.hpp"
-
 namespace interfaces
 {
 
@@ -28,27 +24,17 @@ inline void to_flow_style_yaml(
   const Distance_Request & msg,
   std::ostream & out)
 {
-  out << "{";
-  // member: point
-  {
-    out << "point: ";
-    to_flow_style_yaml(msg.point, out);
-  }
-  out << "}";
+  (void)msg;
+  out << "null";
 }  // NOLINT(readability/fn_size)
 
 inline void to_block_style_yaml(
   const Distance_Request & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: point
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "point:\n";
-    to_block_style_yaml(msg.point, out, indentation + 2);
-  }
+  (void)msg;
+  (void)indentation;
+  out << "null\n";
 }  // NOLINT(readability/fn_size)
 
 inline std::string to_yaml(const Distance_Request & msg, bool use_flow_style = false)
@@ -97,11 +83,11 @@ inline const char * name<interfaces::srv::Distance_Request>()
 
 template<>
 struct has_fixed_size<interfaces::srv::Distance_Request>
-  : std::integral_constant<bool, has_fixed_size<geometry_msgs::msg::Point>::value> {};
+  : std::integral_constant<bool, true> {};
 
 template<>
 struct has_bounded_size<interfaces::srv::Distance_Request>
-  : std::integral_constant<bool, has_bounded_size<geometry_msgs::msg::Point>::value> {};
+  : std::integral_constant<bool, true> {};
 
 template<>
 struct is_message<interfaces::srv::Distance_Request>
@@ -119,28 +105,17 @@ inline void to_flow_style_yaml(
   const Distance_Response & msg,
   std::ostream & out)
 {
-  out << "{";
-  // member: dis
-  {
-    out << "dis: ";
-    rosidl_generator_traits::value_to_yaml(msg.dis, out);
-  }
-  out << "}";
+  (void)msg;
+  out << "null";
 }  // NOLINT(readability/fn_size)
 
 inline void to_block_style_yaml(
   const Distance_Response & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: dis
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "dis: ";
-    rosidl_generator_traits::value_to_yaml(msg.dis, out);
-    out << "\n";
-  }
+  (void)msg;
+  (void)indentation;
+  out << "null\n";
 }  // NOLINT(readability/fn_size)
 
 inline std::string to_yaml(const Distance_Response & msg, bool use_flow_style = false)

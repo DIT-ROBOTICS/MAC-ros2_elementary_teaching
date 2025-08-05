@@ -34,23 +34,8 @@ extern "C"
 {
 #endif
 
-#include "geometry_msgs/msg/detail/point__functions.h"  // point
 
 // forward declare type support functions
-ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_interfaces
-size_t get_serialized_size_geometry_msgs__msg__Point(
-  const void * untyped_ros_message,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_interfaces
-size_t max_serialized_size_geometry_msgs__msg__Point(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment);
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_interfaces
-const rosidl_message_type_support_t *
-  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, geometry_msgs, msg, Point)();
 
 
 using _Distance_Request__ros_msg_type = interfaces__srv__Distance_Request;
@@ -64,18 +49,9 @@ static bool _Distance_Request__cdr_serialize(
     return false;
   }
   const _Distance_Request__ros_msg_type * ros_message = static_cast<const _Distance_Request__ros_msg_type *>(untyped_ros_message);
-  // Field name: point
+  // Field name: structure_needs_at_least_one_member
   {
-    const message_type_support_callbacks_t * callbacks =
-      static_cast<const message_type_support_callbacks_t *>(
-      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
-        rosidl_typesupport_fastrtps_c, geometry_msgs, msg, Point
-      )()->data);
-    if (!callbacks->cdr_serialize(
-        &ros_message->point, cdr))
-    {
-      return false;
-    }
+    cdr << ros_message->structure_needs_at_least_one_member;
   }
 
   return true;
@@ -90,18 +66,9 @@ static bool _Distance_Request__cdr_deserialize(
     return false;
   }
   _Distance_Request__ros_msg_type * ros_message = static_cast<_Distance_Request__ros_msg_type *>(untyped_ros_message);
-  // Field name: point
+  // Field name: structure_needs_at_least_one_member
   {
-    const message_type_support_callbacks_t * callbacks =
-      static_cast<const message_type_support_callbacks_t *>(
-      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
-        rosidl_typesupport_fastrtps_c, geometry_msgs, msg, Point
-      )()->data);
-    if (!callbacks->cdr_deserialize(
-        cdr, &ros_message->point))
-    {
-      return false;
-    }
+    cdr >> ros_message->structure_needs_at_least_one_member;
   }
 
   return true;
@@ -121,10 +88,12 @@ size_t get_serialized_size_interfaces__srv__Distance_Request(
   (void)padding;
   (void)wchar_size;
 
-  // field.name point
-
-  current_alignment += get_serialized_size_geometry_msgs__msg__Point(
-    &(ros_message->point), current_alignment);
+  // field.name structure_needs_at_least_one_member
+  {
+    size_t item_size = sizeof(ros_message->structure_needs_at_least_one_member);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
 
   return current_alignment - initial_alignment;
 }
@@ -154,24 +123,12 @@ size_t max_serialized_size_interfaces__srv__Distance_Request(
   full_bounded = true;
   is_plain = true;
 
-  // member: point
+  // member: structure_needs_at_least_one_member
   {
     size_t array_size = 1;
 
-
-    last_member_size = 0;
-    for (size_t index = 0; index < array_size; ++index) {
-      bool inner_full_bounded;
-      bool inner_is_plain;
-      size_t inner_size;
-      inner_size =
-        max_serialized_size_geometry_msgs__msg__Point(
-        inner_full_bounded, inner_is_plain, current_alignment);
-      last_member_size += inner_size;
-      current_alignment += inner_size;
-      full_bounded &= inner_full_bounded;
-      is_plain &= inner_is_plain;
-    }
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
   }
 
   size_t ret_val = current_alignment - initial_alignment;
@@ -182,7 +139,7 @@ size_t max_serialized_size_interfaces__srv__Distance_Request(
     using DataType = interfaces__srv__Distance_Request;
     is_plain =
       (
-      offsetof(DataType, point) +
+      offsetof(DataType, structure_needs_at_least_one_member) +
       last_member_size
       ) == ret_val;
   }
@@ -285,9 +242,9 @@ static bool _Distance_Response__cdr_serialize(
     return false;
   }
   const _Distance_Response__ros_msg_type * ros_message = static_cast<const _Distance_Response__ros_msg_type *>(untyped_ros_message);
-  // Field name: dis
+  // Field name: structure_needs_at_least_one_member
   {
-    cdr << ros_message->dis;
+    cdr << ros_message->structure_needs_at_least_one_member;
   }
 
   return true;
@@ -302,9 +259,9 @@ static bool _Distance_Response__cdr_deserialize(
     return false;
   }
   _Distance_Response__ros_msg_type * ros_message = static_cast<_Distance_Response__ros_msg_type *>(untyped_ros_message);
-  // Field name: dis
+  // Field name: structure_needs_at_least_one_member
   {
-    cdr >> ros_message->dis;
+    cdr >> ros_message->structure_needs_at_least_one_member;
   }
 
   return true;
@@ -324,9 +281,9 @@ size_t get_serialized_size_interfaces__srv__Distance_Response(
   (void)padding;
   (void)wchar_size;
 
-  // field.name dis
+  // field.name structure_needs_at_least_one_member
   {
-    size_t item_size = sizeof(ros_message->dis);
+    size_t item_size = sizeof(ros_message->structure_needs_at_least_one_member);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -359,13 +316,12 @@ size_t max_serialized_size_interfaces__srv__Distance_Response(
   full_bounded = true;
   is_plain = true;
 
-  // member: dis
+  // member: structure_needs_at_least_one_member
   {
     size_t array_size = 1;
 
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
   }
 
   size_t ret_val = current_alignment - initial_alignment;
@@ -376,7 +332,7 @@ size_t max_serialized_size_interfaces__srv__Distance_Response(
     using DataType = interfaces__srv__Distance_Response;
     is_plain =
       (
-      offsetof(DataType, dis) +
+      offsetof(DataType, structure_needs_at_least_one_member) +
       last_member_size
       ) == ret_val;
   }

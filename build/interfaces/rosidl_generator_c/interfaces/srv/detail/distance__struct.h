@@ -17,14 +17,10 @@ extern "C"
 
 // Constants defined in the message
 
-// Include directives for member types
-// Member 'point'
-#include "geometry_msgs/msg/detail/point__struct.h"
-
 /// Struct defined in srv/Distance in the package interfaces.
 typedef struct interfaces__srv__Distance_Request
 {
-  geometry_msgs__msg__Point point;
+  uint8_t structure_needs_at_least_one_member;
 } interfaces__srv__Distance_Request;
 
 // Struct for a sequence of interfaces__srv__Distance_Request.
@@ -43,7 +39,7 @@ typedef struct interfaces__srv__Distance_Request__Sequence
 /// Struct defined in srv/Distance in the package interfaces.
 typedef struct interfaces__srv__Distance_Response
 {
-  float dis;
+  uint8_t structure_needs_at_least_one_member;
 } interfaces__srv__Distance_Response;
 
 // Struct for a sequence of interfaces__srv__Distance_Response.

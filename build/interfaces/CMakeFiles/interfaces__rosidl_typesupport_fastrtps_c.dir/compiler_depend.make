@@ -224,12 +224,9 @@ CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fast
   /usr/include/c++/11/bits/istream.tcc \
   /usr/include/malloc.h \
   rosidl_generator_c/interfaces/srv/detail/distance__struct.h \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.h \
   rosidl_generator_c/interfaces/srv/detail/distance__functions.h \
   /usr/include/c++/11/stdlib.h \
   rosidl_generator_c/interfaces/msg/rosidl_generator_c__visibility_control.h \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__functions.h \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_c__visibility_control.h \
   /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp/rosidl_typesupport_fastrtps_cpp/service_type_support.h \
   /opt/ros/humble/include/rmw/rmw/types.h \
   /opt/ros/humble/include/rcutils/rcutils/logging.h \
@@ -283,12 +280,6 @@ rosidl_generator_c/interfaces/srv/detail/distance__type_support.h:
 /opt/ros/humble/include/rmw/rmw/macros.h:
 
 /opt/ros/humble/include/rmw/rmw/localhost.h:
-
-/opt/ros/humble/include/rmw/rmw/domain_id.h:
-
-/opt/ros/humble/include/rmw/rmw/init_options.h:
-
-/opt/ros/humble/include/rmw/rmw/init.h:
 
 /usr/include/stdlib.h:
 
@@ -348,8 +339,6 @@ rosidl_generator_c/interfaces/srv/detail/distance__type_support.h:
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__functions.h:
-
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
 /usr/include/locale.h:
@@ -366,9 +355,9 @@ rosidl_generator_c/interfaces/srv/detail/distance__type_support.h:
 
 /usr/include/c++/11/cctype:
 
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
+/opt/ros/humble/include/rmw/rmw/domain_id.h:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_c__visibility_control.h:
+/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
 /usr/include/c++/11/ext/alloc_traits.h:
 
@@ -782,8 +771,6 @@ rosidl_generator_c/interfaces/msg/rosidl_generator_c__visibility_control.h:
 
 rosidl_generator_c/interfaces/srv/detail/distance__struct.h:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.h:
-
 /usr/include/c++/11/stdlib.h:
 
 /opt/ros/humble/include/rmw/rmw/types.h:
@@ -797,6 +784,8 @@ rosidl_generator_c/interfaces/srv/detail/distance__struct.h:
 /opt/ros/humble/include/rcutils/rcutils/time.h:
 
 /opt/ros/humble/include/rcutils/rcutils/types.h:
+
+/opt/ros/humble/include/rmw/rmw/init_options.h:
 
 /opt/ros/humble/include/rcutils/rcutils/types/char_array.h:
 
@@ -813,3 +802,5 @@ rosidl_generator_c/interfaces/srv/detail/distance__struct.h:
 /opt/ros/humble/include/rmw/rmw/qos_policy_kind.h:
 
 /opt/ros/humble/include/rmw/rmw/events_statuses/message_lost.h:
+
+/opt/ros/humble/include/rmw/rmw/init.h:

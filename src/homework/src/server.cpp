@@ -1,6 +1,6 @@
 #include "homework/service_hw.h"
 
-server::server() : Node("TODO: node_name"){
+server::server() : Node("Server"){
 
    // TODO: setup a server for the server
 }
