@@ -7,6 +7,7 @@
 #include <string>
 #include <cmath>
 
+using Distance = interfaces::srv::Distance;
 using std::placeholders::_1;
 using std::placeholders::_2;
 using namespace std::chrono_literals;
@@ -18,8 +19,9 @@ class server : public rclcpp::Node{
 
   private:
     // TODO: define the callback function for the server
-
-    // TODO: create a server for the service
+    void distance_callback(const std::shared_ptr<Distance::Request> request,std::shared_ptr<Distance::Response> response);
+    
+    rclcpp::Service<Distance>::SharedPtr service_;
 };
 
 class client : public rclcpp::Node{
@@ -29,6 +31,11 @@ class client : public rclcpp::Node{
 
   private:
     // TODO: define the timer and callback function for the server
-
+    void response_callback(const std::shared_ptr<Distance::Request> request,std::shared_ptr<Distance::Response> response);
+    void timer_callback();
+    rclcpp::Service<Distance>::SharedPtr service_;
+    rclcpp::TimerBase::SharedPtr timer_;
+    Distance::Request->point.x=0.0;
+    Distance::Request->point.y=0.0;
     // TODO: create a timer and client for the service
 };
