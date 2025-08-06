@@ -196,7 +196,6 @@ CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fa
   /usr/include/c++/11/stdexcept \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_initialization.hpp \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h \
-  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp \
   /opt/ros/humble/include/fastcdr/fastcdr/Cdr.h \
   /opt/ros/humble/include/fastcdr/fastcdr/fastcdr_dll.h \
   /opt/ros/humble/include/fastcdr/fastcdr/config.h \
@@ -335,8 +334,6 @@ CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fa
 /opt/ros/humble/include/rmw/rmw/qos_policy_kind.h:
 
 /opt/ros/humble/include/rmw/rmw/events_statuses/incompatible_qos.h:
-
-/opt/ros/humble/include/rmw/rmw/events_statuses/events_statuses.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
@@ -509,8 +506,6 @@ rosidl_typesupport_fastrtps_cpp/interfaces/srv/detail/dds_fastrtps/distance__typ
 /usr/include/c++/11/debug/debug.h:
 
 /usr/include/features-time64.h:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
@@ -867,3 +862,5 @@ rosidl_typesupport_fastrtps_cpp/interfaces/msg/rosidl_typesupport_fastrtps_cpp__
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
 /opt/ros/humble/include/rcutils/rcutils/types/uint8_array.h:
+
+/opt/ros/humble/include/rmw/rmw/events_statuses/events_statuses.h:

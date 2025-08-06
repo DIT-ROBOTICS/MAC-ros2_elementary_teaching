@@ -55,6 +55,7 @@ CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/srv/
   /usr/include/stdint.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__struct.h \
   /usr/include/assert.h \
   /usr/include/string.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
@@ -74,12 +75,16 @@ CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/srv/
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /opt/ros/humble/include/rcutils/rcutils/visibility_control.h \
   /opt/ros/humble/include/rcutils/rcutils/visibility_control_macros.h \
-  /opt/ros/humble/include/rcutils/rcutils/types/rcutils_ret.h
+  /opt/ros/humble/include/rcutils/rcutils/types/rcutils_ret.h \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__functions.h \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_c__visibility_control.h
 
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_c__visibility_control.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
@@ -90,6 +95,8 @@ CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/srv/
 /opt/ros/humble/include/rcutils/rcutils/testing/fault_injection.h:
 
 /opt/ros/humble/include/rcutils/rcutils/allocator.h:
+
+/usr/include/strings.h:
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
@@ -114,8 +121,6 @@ CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/srv/
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
-
-/usr/include/strings.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
@@ -145,13 +150,13 @@ rosidl_generator_c/interfaces/srv/detail/distance__functions.h:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
-
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
 /opt/ros/humble/include/rcutils/rcutils/types/rcutils_ret.h:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__functions.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
@@ -174,6 +179,10 @@ rosidl_generator_c/interfaces/msg/rosidl_generator_c__visibility_control.h:
 /usr/include/string.h:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__struct.h:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 

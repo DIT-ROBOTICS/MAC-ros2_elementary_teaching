@@ -35,7 +35,6 @@ class client : public rclcpp::Node{
     void timer_callback();
     rclcpp::Service<Distance>::SharedPtr service_;
     rclcpp::TimerBase::SharedPtr timer_;
-    Distance::Request->point.x=0.0;
-    Distance::Request->point.y=0.0;
+    
     // TODO: create a timer and client for the service
 };

@@ -10,13 +10,21 @@
 
 #include "rcutils/allocator.h"
 
+// Include directives for member types
+// Member `point`
+#include "geometry_msgs/msg/detail/point32__functions.h"
+
 bool
 interfaces__srv__Distance_Request__init(interfaces__srv__Distance_Request * msg)
 {
   if (!msg) {
     return false;
   }
-  // structure_needs_at_least_one_member
+  // point
+  if (!geometry_msgs__msg__Point32__init(&msg->point)) {
+    interfaces__srv__Distance_Request__fini(msg);
+    return false;
+  }
   return true;
 }
 
@@ -26,7 +34,8 @@ interfaces__srv__Distance_Request__fini(interfaces__srv__Distance_Request * msg)
   if (!msg) {
     return;
   }
-  // structure_needs_at_least_one_member
+  // point
+  geometry_msgs__msg__Point32__fini(&msg->point);
 }
 
 bool
@@ -35,8 +44,10 @@ interfaces__srv__Distance_Request__are_equal(const interfaces__srv__Distance_Req
   if (!lhs || !rhs) {
     return false;
   }
-  // structure_needs_at_least_one_member
-  if (lhs->structure_needs_at_least_one_member != rhs->structure_needs_at_least_one_member) {
+  // point
+  if (!geometry_msgs__msg__Point32__are_equal(
+      &(lhs->point), &(rhs->point)))
+  {
     return false;
   }
   return true;
@@ -50,8 +61,12 @@ interfaces__srv__Distance_Request__copy(
   if (!input || !output) {
     return false;
   }
-  // structure_needs_at_least_one_member
-  output->structure_needs_at_least_one_member = input->structure_needs_at_least_one_member;
+  // point
+  if (!geometry_msgs__msg__Point32__copy(
+      &(input->point), &(output->point)))
+  {
+    return false;
+  }
   return true;
 }
 
@@ -241,7 +256,7 @@ interfaces__srv__Distance_Response__init(interfaces__srv__Distance_Response * ms
   if (!msg) {
     return false;
   }
-  // structure_needs_at_least_one_member
+  // dis
   return true;
 }
 
@@ -251,7 +266,7 @@ interfaces__srv__Distance_Response__fini(interfaces__srv__Distance_Response * ms
   if (!msg) {
     return;
   }
-  // structure_needs_at_least_one_member
+  // dis
 }
 
 bool
@@ -260,8 +275,8 @@ interfaces__srv__Distance_Response__are_equal(const interfaces__srv__Distance_Re
   if (!lhs || !rhs) {
     return false;
   }
-  // structure_needs_at_least_one_member
-  if (lhs->structure_needs_at_least_one_member != rhs->structure_needs_at_least_one_member) {
+  // dis
+  if (lhs->dis != rhs->dis) {
     return false;
   }
   return true;
@@ -275,8 +290,8 @@ interfaces__srv__Distance_Response__copy(
   if (!input || !output) {
     return false;
   }
-  // structure_needs_at_least_one_member
-  output->structure_needs_at_least_one_member = input->structure_needs_at_least_one_member;
+  // dis
+  output->dis = input->dis;
   return true;
 }
 
