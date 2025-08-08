@@ -61,6 +61,10 @@ install(DIRECTORY
 )
 
 # TODO: install launch file directory
+install(DIRECTORY
+  launch/
+  DESTINATION share/${PROJECT_NAME}
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

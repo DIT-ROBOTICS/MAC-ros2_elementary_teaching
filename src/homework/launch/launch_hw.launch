@@ -1,7 +1,16 @@
+<!-- .launch is xml -->
 <launch>
 
     <!-- TODO: rename server node to Tower -->
     <!-- TODO: rename client node to Chassis -->
     <!-- TODO: rename topic name to /number -->
+    <node pkg="homework" exec="publisher">
+        <remap from="/topic" to="/number"/>
+    </node>
+    <node pkg="homework" exec="subscription">
+        <remap from="/topic" to="/number"/>
+    </node>
+    <node pkg="homework" exec="server" name="Tower"/>
+    <node pkg="homework" exec="client" name="Chassis"/>
 
 </launch>
