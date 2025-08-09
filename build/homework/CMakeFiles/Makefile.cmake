@@ -694,8 +694,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/uninstall.dir/DependInfo.cmake"
   "CMakeFiles/homework_uninstall.dir/DependInfo.cmake"
-  "CMakeFiles/publisher.dir/DependInfo.cmake"
-  "CMakeFiles/subscriber.dir/DependInfo.cmake"
-  "CMakeFiles/server.dir/DependInfo.cmake"
-  "CMakeFiles/client.dir/DependInfo.cmake"
+  "CMakeFiles/Publisher.dir/DependInfo.cmake"
+  "CMakeFiles/Subscriber.dir/DependInfo.cmake"
+  "CMakeFiles/Server.dir/DependInfo.cmake"
+  "CMakeFiles/Client.dir/DependInfo.cmake"
   )

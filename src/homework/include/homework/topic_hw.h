@@ -43,22 +43,22 @@
 using std::placeholders::_1;
 using namespace std::chrono_literals;
 
-class pub : public rclcpp::Node { // Publisher類別，繼承自rclcpp::Node
+class pub : public rclcpp::Node {
 public:
     pub();
 
 private:
     void timer_callback();
-    rclcpp::TimerBase::SharedPtr timer_; // 建立一個Timer，控制每0.5秒執行一次callback
-    rclcpp::Publisher<std_msgs::msg::Int64>::SharedPtr publisher_; // Publisher物件，發佈整數訊息
-    int64_t count_ = 0; // 記錄當前計數值
+    rclcpp::TimerBase::SharedPtr timer_;
+    rclcpp::Publisher<std_msgs::msg::Int64>::SharedPtr publisher_;
+    int64_t count_ = 0;
 };
 
-class sub : public rclcpp::Node { // Subscriber類別，繼承自rclcpp::Node
+class sub : public rclcpp::Node {
 public:
     sub();
 
 private:
-    void topic_callback(const std_msgs::msg::Int64 & msg); // Subscription物件，用於接收整數訊息
-    rclcpp::Subscription<std_msgs::msg::Int64>::SharedPtr subscription_; // callback函式，收到訊息時會印出訊息內容
+    void topic_callback(const std_msgs::msg::Int64 & msg);
+    rclcpp::Subscription<std_msgs::msg::Int64>::SharedPtr subscription_;
 };

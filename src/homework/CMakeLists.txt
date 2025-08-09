@@ -10,36 +10,25 @@ find_package(ament_cmake REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(rclcpp REQUIRED)
-
-# TODO: include interfaces files' directories 我把的interface的package抓來用
-find_package(interfaces REQUIRED)
+# TODO: include interfaces files' directories
 
 # TODO: include header files' directories
+
+# TODO: add_executable for each node
+
 include_directories(
   include
 )
 
-# TODO: add_executable for each node
-
-add_executable(publisher src/publisher.cpp) #把 src/publisher.cpp 編譯成一個叫 publisher 的可執行檔
-ament_target_dependencies(publisher rclcpp std_msgs) #給這個 publisher 執行檔連接上 rclcpp 和 std_msgs 的函式庫和標頭檔
+add_executable(publisher src/publisher.cpp)
+ament_target_dependencies(publisher rclcpp std_msgs)
 
 add_executable(subscriber src/subscription.cpp)
 ament_target_dependencies(subscriber rclcpp std_msgs)
 
-# Server Node
-add_executable(server src/server.cpp)
-ament_target_dependencies(server rclcpp geometry_msgs interfaces)
-
-# Client Node
-add_executable(client src/client.cpp)
-ament_target_dependencies(client rclcpp geometry_msgs interfaces)
-
 install(TARGETS
-  publisher 
+  publisher
   subscriber
-  server
-  client
   DESTINATION lib/${PROJECT_NAME})
 
 # TODO: install launch file directory

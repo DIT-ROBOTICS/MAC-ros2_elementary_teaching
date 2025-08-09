@@ -1,9 +1,9 @@
 /home/user/ros2_teaching/build/homework/CMakeFiles/uninstall.dir
 /home/user/ros2_teaching/build/homework/CMakeFiles/homework_uninstall.dir
-/home/user/ros2_teaching/build/homework/CMakeFiles/publisher.dir
-/home/user/ros2_teaching/build/homework/CMakeFiles/subscriber.dir
-/home/user/ros2_teaching/build/homework/CMakeFiles/server.dir
-/home/user/ros2_teaching/build/homework/CMakeFiles/client.dir
+/home/user/ros2_teaching/build/homework/CMakeFiles/Publisher.dir
+/home/user/ros2_teaching/build/homework/CMakeFiles/Subscriber.dir
+/home/user/ros2_teaching/build/homework/CMakeFiles/Server.dir
+/home/user/ros2_teaching/build/homework/CMakeFiles/Client.dir
 /home/user/ros2_teaching/build/homework/CMakeFiles/test.dir
 /home/user/ros2_teaching/build/homework/CMakeFiles/edit_cache.dir
 /home/user/ros2_teaching/build/homework/CMakeFiles/rebuild_cache.dir

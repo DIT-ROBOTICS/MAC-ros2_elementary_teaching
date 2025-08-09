@@ -1,7 +1,8 @@
-/home/user/ros2_teaching/install/homework/lib/homework/publisher
-/home/user/ros2_teaching/install/homework/lib/homework/subscriber
-/home/user/ros2_teaching/install/homework/lib/homework/server
-/home/user/ros2_teaching/install/homework/lib/homework/client
+/home/user/ros2_teaching/install/homework/lib/homework/Publisher
+/home/user/ros2_teaching/install/homework/lib/homework/Subscriber
+/home/user/ros2_teaching/install/homework/lib/homework/Server
+/home/user/ros2_teaching/install/homework/lib/homework/Client
+/home/user/ros2_teaching/install/homework/share/homework/launch/launch_hw.launch
 /home/user/ros2_teaching/install/homework/share/ament_index/resource_index/package_run_dependencies/homework
 /home/user/ros2_teaching/install/homework/share/ament_index/resource_index/parent_prefix_path/homework
 /home/user/ros2_teaching/install/homework/share/homework/environment/ament_prefix_path.sh
