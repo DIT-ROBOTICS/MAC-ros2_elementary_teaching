@@ -6,9 +6,13 @@
 
 module interfaces {
   module srv {
+    @verbatim (language="comment", text=
+      "Request")
     struct Distance_Request {
       geometry_msgs::msg::Point point;
     };
+    @verbatim (language="comment", text=
+      "Response")
     struct Distance_Response {
       float dis;
     };

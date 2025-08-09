@@ -1,5 +1,5 @@
-/home/user/ros2_teaching/install/homework/lib/homework/Publisher
-/home/user/ros2_teaching/install/homework/lib/homework/Subscriber
+/home/user/ros2_teaching/install/homework/lib/homework/talker
+/home/user/ros2_teaching/install/homework/lib/homework/listener
 /home/user/ros2_teaching/install/homework/lib/homework/Server
 /home/user/ros2_teaching/install/homework/lib/homework/Client
 /home/user/ros2_teaching/install/homework/share/homework/launch/launch_hw.launch

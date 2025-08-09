@@ -198,30 +198,30 @@ homework_uninstall/fast:
 .PHONY : homework_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named Publisher
+# Target rules for targets named talker
 
 # Build rule for target.
-Publisher: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Publisher
-.PHONY : Publisher
+talker: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 talker
+.PHONY : talker
 
 # fast build rule for target.
-Publisher/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Publisher.dir/build.make CMakeFiles/Publisher.dir/build
-.PHONY : Publisher/fast
+talker/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/build
+.PHONY : talker/fast
 
 #=============================================================================
-# Target rules for targets named Subscriber
+# Target rules for targets named listener
 
 # Build rule for target.
-Subscriber: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Subscriber
-.PHONY : Subscriber
+listener: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 listener
+.PHONY : listener
 
 # fast build rule for target.
-Subscriber/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Subscriber.dir/build.make CMakeFiles/Subscriber.dir/build
-.PHONY : Subscriber/fast
+listener/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/build
+.PHONY : listener/fast
 
 #=============================================================================
 # Target rules for targets named Server
@@ -278,7 +278,7 @@ src/publisher.o: src/publisher.cpp.o
 
 # target to build an object file
 src/publisher.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Publisher.dir/build.make CMakeFiles/Publisher.dir/src/publisher.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/src/publisher.cpp.o
 .PHONY : src/publisher.cpp.o
 
 src/publisher.i: src/publisher.cpp.i
@@ -286,7 +286,7 @@ src/publisher.i: src/publisher.cpp.i
 
 # target to preprocess a source file
 src/publisher.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Publisher.dir/build.make CMakeFiles/Publisher.dir/src/publisher.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/src/publisher.cpp.i
 .PHONY : src/publisher.cpp.i
 
 src/publisher.s: src/publisher.cpp.s
@@ -294,7 +294,7 @@ src/publisher.s: src/publisher.cpp.s
 
 # target to generate assembly for a file
 src/publisher.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Publisher.dir/build.make CMakeFiles/Publisher.dir/src/publisher.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/src/publisher.cpp.s
 .PHONY : src/publisher.cpp.s
 
 src/server.o: src/server.cpp.o
@@ -326,7 +326,7 @@ src/subscription.o: src/subscription.cpp.o
 
 # target to build an object file
 src/subscription.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Subscriber.dir/build.make CMakeFiles/Subscriber.dir/src/subscription.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/src/subscription.cpp.o
 .PHONY : src/subscription.cpp.o
 
 src/subscription.i: src/subscription.cpp.i
@@ -334,7 +334,7 @@ src/subscription.i: src/subscription.cpp.i
 
 # target to preprocess a source file
 src/subscription.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Subscriber.dir/build.make CMakeFiles/Subscriber.dir/src/subscription.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/src/subscription.cpp.i
 .PHONY : src/subscription.cpp.i
 
 src/subscription.s: src/subscription.cpp.s
@@ -342,7 +342,7 @@ src/subscription.s: src/subscription.cpp.s
 
 # target to generate assembly for a file
 src/subscription.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Subscriber.dir/build.make CMakeFiles/Subscriber.dir/src/subscription.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/src/subscription.cpp.s
 .PHONY : src/subscription.cpp.s
 
 # Help Target
@@ -361,9 +361,9 @@ help:
 	@echo "... homework_uninstall"
 	@echo "... uninstall"
 	@echo "... Client"
-	@echo "... Publisher"
 	@echo "... Server"
-	@echo "... Subscriber"
+	@echo "... listener"
+	@echo "... talker"
 	@echo "... src/client.o"
 	@echo "... src/client.i"
 	@echo "... src/client.s"

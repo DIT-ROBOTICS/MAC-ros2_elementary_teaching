@@ -63,8 +63,8 @@ CMAKE_BINARY_DIR = /home/user/ros2_teaching/build/homework
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/Publisher.dir/all
-all: CMakeFiles/Subscriber.dir/all
+all: CMakeFiles/talker.dir/all
+all: CMakeFiles/listener.dir/all
 all: CMakeFiles/Server.dir/all
 all: CMakeFiles/Client.dir/all
 .PHONY : all
@@ -76,8 +76,8 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/homework_uninstall.dir/clean
-clean: CMakeFiles/Publisher.dir/clean
-clean: CMakeFiles/Subscriber.dir/clean
+clean: CMakeFiles/talker.dir/clean
+clean: CMakeFiles/listener.dir/clean
 clean: CMakeFiles/Server.dir/clean
 clean: CMakeFiles/Client.dir/clean
 .PHONY : clean
@@ -135,56 +135,56 @@ CMakeFiles/homework_uninstall.dir/clean:
 .PHONY : CMakeFiles/homework_uninstall.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Publisher.dir
+# Target rules for target CMakeFiles/talker.dir
 
 # All Build rule for target.
-CMakeFiles/Publisher.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Publisher.dir/build.make CMakeFiles/Publisher.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Publisher.dir/build.make CMakeFiles/Publisher.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/ros2_teaching/build/homework/CMakeFiles --progress-num=3,4 "Built target Publisher"
-.PHONY : CMakeFiles/Publisher.dir/all
+CMakeFiles/talker.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/ros2_teaching/build/homework/CMakeFiles --progress-num=7,8 "Built target talker"
+.PHONY : CMakeFiles/talker.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Publisher.dir/rule: cmake_check_build_system
+CMakeFiles/talker.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/ros2_teaching/build/homework/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Publisher.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/talker.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/ros2_teaching/build/homework/CMakeFiles 0
-.PHONY : CMakeFiles/Publisher.dir/rule
+.PHONY : CMakeFiles/talker.dir/rule
 
 # Convenience name for target.
-Publisher: CMakeFiles/Publisher.dir/rule
-.PHONY : Publisher
+talker: CMakeFiles/talker.dir/rule
+.PHONY : talker
 
 # clean rule for target.
-CMakeFiles/Publisher.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Publisher.dir/build.make CMakeFiles/Publisher.dir/clean
-.PHONY : CMakeFiles/Publisher.dir/clean
+CMakeFiles/talker.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/clean
+.PHONY : CMakeFiles/talker.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Subscriber.dir
+# Target rules for target CMakeFiles/listener.dir
 
 # All Build rule for target.
-CMakeFiles/Subscriber.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Subscriber.dir/build.make CMakeFiles/Subscriber.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Subscriber.dir/build.make CMakeFiles/Subscriber.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/ros2_teaching/build/homework/CMakeFiles --progress-num=7,8 "Built target Subscriber"
-.PHONY : CMakeFiles/Subscriber.dir/all
+CMakeFiles/listener.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/ros2_teaching/build/homework/CMakeFiles --progress-num=5,6 "Built target listener"
+.PHONY : CMakeFiles/listener.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Subscriber.dir/rule: cmake_check_build_system
+CMakeFiles/listener.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/ros2_teaching/build/homework/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Subscriber.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/listener.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/ros2_teaching/build/homework/CMakeFiles 0
-.PHONY : CMakeFiles/Subscriber.dir/rule
+.PHONY : CMakeFiles/listener.dir/rule
 
 # Convenience name for target.
-Subscriber: CMakeFiles/Subscriber.dir/rule
-.PHONY : Subscriber
+listener: CMakeFiles/listener.dir/rule
+.PHONY : listener
 
 # clean rule for target.
-CMakeFiles/Subscriber.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Subscriber.dir/build.make CMakeFiles/Subscriber.dir/clean
-.PHONY : CMakeFiles/Subscriber.dir/clean
+CMakeFiles/listener.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/clean
+.PHONY : CMakeFiles/listener.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/Server.dir
@@ -193,7 +193,7 @@ CMakeFiles/Subscriber.dir/clean:
 CMakeFiles/Server.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/ros2_teaching/build/homework/CMakeFiles --progress-num=5,6 "Built target Server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/ros2_teaching/build/homework/CMakeFiles --progress-num=3,4 "Built target Server"
 .PHONY : CMakeFiles/Server.dir/all
 
 # Build rule for subdir invocation for target.

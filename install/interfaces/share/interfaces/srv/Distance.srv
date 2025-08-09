@@ -1,3 +1,5 @@
+# Request
 geometry_msgs/Point point
 ---
+# Response
 float32 dis
