@@ -1,11 +1,25 @@
 #include "homework/service_hw.h"
 
-server::server() : Node("TODO: node_name"){
-
-   // TODO: setup a server for the server
+server::server() : Node("Server"){
+   service_ = this->create_service<interfaces::srv::Distance>(
+      "calculate_distance",
+      std::bind(&server::handle_request, this, std::placeholders::_1, _2));
 }
 
-// TODO: make the callback function for the server
+void server::handle_request(
+  const std::shared_ptr<interfaces::srv::Distance::Request> request,
+  std::shared_ptr<interfaces::srv::Distance::Response> response)
+{
+  float x = request->point.x;
+  float y = request->point.y;
+
+  // 計算平方和的平方根
+  response->dis = std::sqrt(x * x + y * y);
+
+  RCLCPP_INFO(this->get_logger(), "Received request: x=%.2f, y=%.2f", x, y);
+  RCLCPP_INFO(this->get_logger(), "Sending response: dis=%.2f", response->dis);
+}
+
 
 int main(int argc, char **argv){
 

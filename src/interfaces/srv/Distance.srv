@@ -1,3 +1,6 @@
-TODO: your request
+# TODO: your request
+geometry_msgs/Point point
+
 ---
-TODO: your response
+# TODO: your response
+float32 dis
