@@ -20,13 +20,13 @@
 
 #include "homework/topic_hw.h"
 
-sub::sub() : Node("Subscriber") {
+sub::sub() : Node("Subscriber") { // 初始化節點名稱
     subscription_ = this->create_subscription<std_msgs::msg::Int64>(
-        "/topic", 10, std::bind(&sub::topic_callback, this, _1));
+        "/topic", 10, std::bind(&sub::topic_callback, this, _1)); // 建立訂閱者，主題為"/topic"，佇列大小為10，並綁定callback函式
 }
 
-void sub::topic_callback(const std_msgs::msg::Int64 & msg) {
-    RCLCPP_INFO(this->get_logger(), "Received: '%ld'", msg.data);
+void sub::topic_callback(const std_msgs::msg::Int64 & msg) { // 訂閱callback實作
+    RCLCPP_INFO(this->get_logger(), "Received: '%ld'", msg.data); // 印出接收到的訊息資料
 }
 
 int main(int argc, char * argv[]) {

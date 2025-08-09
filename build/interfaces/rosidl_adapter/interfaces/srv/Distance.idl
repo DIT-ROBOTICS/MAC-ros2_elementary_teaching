@@ -6,9 +6,15 @@
 
 module interfaces {
   module srv {
+    @verbatim (language="comment", text=
+      "TODO: your request" "\n"
+      "請求部分：傳入一個點（x, y, z），但只會用到 x 和 y")
     struct Distance_Request {
       geometry_msgs::msg::Point point;
     };
+    @verbatim (language="comment", text=
+      "TODO: your response" "\n"
+      "回應部分：伺服器計算後回傳的距離值")
     struct Distance_Response {
       float dis;
     };
