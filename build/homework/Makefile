@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/MAC-ros2_elementary_teaching/src/homework
+CMAKE_SOURCE_DIR = /home/user/ros2_teaching/src/homework
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/MAC-ros2_elementary_teaching/build/homework
+CMAKE_BINARY_DIR = /home/user/ros2_teaching/build/homework
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/MAC-ros2_elementary_teaching/build/homework/CMakeFiles /home/user/MAC-ros2_elementary_teaching/build/homework//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/ros2_teaching/build/homework/CMakeFiles /home/user/ros2_teaching/build/homework//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/MAC-ros2_elementary_teaching/build/homework/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/ros2_teaching/build/homework/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -223,6 +223,56 @@ subscription/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscription.dir/build.make CMakeFiles/subscription.dir/build
 .PHONY : subscription/fast
 
+#=============================================================================
+# Target rules for targets named server
+
+# Build rule for target.
+server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server
+.PHONY : server
+
+# fast build rule for target.
+server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
+.PHONY : server/fast
+
+#=============================================================================
+# Target rules for targets named client
+
+# Build rule for target.
+client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 client
+.PHONY : client
+
+# fast build rule for target.
+client/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
+.PHONY : client/fast
+
+src/client.o: src/client.cpp.o
+.PHONY : src/client.o
+
+# target to build an object file
+src/client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/client.cpp.o
+.PHONY : src/client.cpp.o
+
+src/client.i: src/client.cpp.i
+.PHONY : src/client.i
+
+# target to preprocess a source file
+src/client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/client.cpp.i
+.PHONY : src/client.cpp.i
+
+src/client.s: src/client.cpp.s
+.PHONY : src/client.s
+
+# target to generate assembly for a file
+src/client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/client.cpp.s
+.PHONY : src/client.cpp.s
+
 src/publisher.o: src/publisher.cpp.o
 .PHONY : src/publisher.o
 
@@ -246,6 +296,30 @@ src/publisher.s: src/publisher.cpp.s
 src/publisher.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/src/publisher.cpp.s
 .PHONY : src/publisher.cpp.s
+
+src/server.o: src/server.cpp.o
+.PHONY : src/server.o
+
+# target to build an object file
+src/server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/server.cpp.o
+.PHONY : src/server.cpp.o
+
+src/server.i: src/server.cpp.i
+.PHONY : src/server.i
+
+# target to preprocess a source file
+src/server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/server.cpp.i
+.PHONY : src/server.cpp.i
+
+src/server.s: src/server.cpp.s
+.PHONY : src/server.s
+
+# target to generate assembly for a file
+src/server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/server.cpp.s
+.PHONY : src/server.cpp.s
 
 src/subscription.o: src/subscription.cpp.o
 .PHONY : src/subscription.o
@@ -286,11 +360,19 @@ help:
 	@echo "... test"
 	@echo "... homework_uninstall"
 	@echo "... uninstall"
+	@echo "... client"
 	@echo "... publisher"
+	@echo "... server"
 	@echo "... subscription"
+	@echo "... src/client.o"
+	@echo "... src/client.i"
+	@echo "... src/client.s"
 	@echo "... src/publisher.o"
 	@echo "... src/publisher.i"
 	@echo "... src/publisher.s"
+	@echo "... src/server.o"
+	@echo "... src/server.i"
+	@echo "... src/server.s"
 	@echo "... src/subscription.o"
 	@echo "... src/subscription.i"
 	@echo "... src/subscription.s"
