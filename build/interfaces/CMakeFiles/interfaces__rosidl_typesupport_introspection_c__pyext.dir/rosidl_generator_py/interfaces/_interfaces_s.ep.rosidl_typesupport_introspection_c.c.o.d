@@ -204,5 +204,5 @@ CMakeFiles/interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_gene
  /home/user/ros2_teaching/build/interfaces/rosidl_generator_c/interfaces/srv/detail/distance__type_support.h \
  /home/user/ros2_teaching/build/interfaces/rosidl_generator_c/interfaces/msg/rosidl_generator_c__visibility_control.h \
  /home/user/ros2_teaching/build/interfaces/rosidl_generator_c/interfaces/srv/detail/distance__struct.h \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.h \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__struct.h \
  /home/user/ros2_teaching/build/interfaces/rosidl_generator_c/interfaces/srv/detail/distance__functions.h

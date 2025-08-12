@@ -16,7 +16,7 @@
 
 // Include directives for member types
 // Member 'point'
-#include "geometry_msgs/msg/detail/point__traits.hpp"
+#include "geometry_msgs/msg/detail/point32__traits.hpp"
 
 namespace interfaces
 {
@@ -97,11 +97,11 @@ inline const char * name<interfaces::srv::Distance_Request>()
 
 template<>
 struct has_fixed_size<interfaces::srv::Distance_Request>
-  : std::integral_constant<bool, has_fixed_size<geometry_msgs::msg::Point>::value> {};
+  : std::integral_constant<bool, has_fixed_size<geometry_msgs::msg::Point32>::value> {};
 
 template<>
 struct has_bounded_size<interfaces::srv::Distance_Request>
-  : std::integral_constant<bool, has_bounded_size<geometry_msgs::msg::Point>::value> {};
+  : std::integral_constant<bool, has_bounded_size<geometry_msgs::msg::Point32>::value> {};
 
 template<>
 struct is_message<interfaces::srv::Distance_Request>

@@ -14,9 +14,9 @@
 
 // Include directives for member types
 // Member `point`
-#include "geometry_msgs/msg/point.h"
+#include "geometry_msgs/msg/point32.h"
 // Member `point`
-#include "geometry_msgs/msg/detail/point__rosidl_typesupport_introspection_c.h"
+#include "geometry_msgs/msg/detail/point32__rosidl_typesupport_introspection_c.h"
 
 #ifdef __cplusplus
 extern "C"
@@ -79,7 +79,7 @@ ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_interfaces
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, interfaces, srv, Distance_Request)() {
   interfaces__srv__Distance_Request__rosidl_typesupport_introspection_c__Distance_Request_message_member_array[0].members_ =
-    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, geometry_msgs, msg, Point)();
+    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, geometry_msgs, msg, Point32)();
   if (!interfaces__srv__Distance_Request__rosidl_typesupport_introspection_c__Distance_Request_message_type_support_handle.typesupport_identifier) {
     interfaces__srv__Distance_Request__rosidl_typesupport_introspection_c__Distance_Request_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;

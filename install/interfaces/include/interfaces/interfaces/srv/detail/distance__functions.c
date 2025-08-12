@@ -12,7 +12,7 @@
 
 // Include directives for member types
 // Member `point`
-#include "geometry_msgs/msg/detail/point__functions.h"
+#include "geometry_msgs/msg/detail/point32__functions.h"
 
 bool
 interfaces__srv__Distance_Request__init(interfaces__srv__Distance_Request * msg)
@@ -21,7 +21,7 @@ interfaces__srv__Distance_Request__init(interfaces__srv__Distance_Request * msg)
     return false;
   }
   // point
-  if (!geometry_msgs__msg__Point__init(&msg->point)) {
+  if (!geometry_msgs__msg__Point32__init(&msg->point)) {
     interfaces__srv__Distance_Request__fini(msg);
     return false;
   }
@@ -35,7 +35,7 @@ interfaces__srv__Distance_Request__fini(interfaces__srv__Distance_Request * msg)
     return;
   }
   // point
-  geometry_msgs__msg__Point__fini(&msg->point);
+  geometry_msgs__msg__Point32__fini(&msg->point);
 }
 
 bool
@@ -45,7 +45,7 @@ interfaces__srv__Distance_Request__are_equal(const interfaces__srv__Distance_Req
     return false;
   }
   // point
-  if (!geometry_msgs__msg__Point__are_equal(
+  if (!geometry_msgs__msg__Point32__are_equal(
       &(lhs->point), &(rhs->point)))
   {
     return false;
@@ -62,7 +62,7 @@ interfaces__srv__Distance_Request__copy(
     return false;
   }
   // point
-  if (!geometry_msgs__msg__Point__copy(
+  if (!geometry_msgs__msg__Point32__copy(
       &(input->point), &(output->point)))
   {
     return false;

@@ -5,6 +5,9 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
+set(CMAKE_CXX_STANDARD 17)            
+set(CMAKE_CXX_STANDARD_REQUIRED ON) 
+
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(std_msgs REQUIRED)
@@ -12,22 +15,26 @@ find_package(geometry_msgs REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(interfaces REQUIRED)
 
-include_directories(
-  include
-  ${catkin_INCLUDE_DIRS}
-)
+# include_directories(
+#   include
+#   ${catkin_INCLUDE_DIRS}
+# )
 
 add_executable(Publisher src/publisher.cpp)
 ament_target_dependencies(Publisher rclcpp std_msgs)
+target_include_directories(Publisher PRIVATE include)
 
 add_executable(Subscriber src/subscription.cpp)
 ament_target_dependencies(Subscriber rclcpp std_msgs)
+target_include_directories(Subscriber PRIVATE include) 
 
 add_executable(Server src/server.cpp)
 ament_target_dependencies(Server rclcpp std_msgs geometry_msgs interfaces)
+target_include_directories(Server PRIVATE include) 
 
 add_executable(Client src/client.cpp)
 ament_target_dependencies(Client rclcpp std_msgs geometry_msgs interfaces)
+target_include_directories(Client PRIVATE include)
 
 install(TARGETS
   Publisher
@@ -35,6 +42,8 @@ install(TARGETS
   Server
   Client
   DESTINATION lib/${PROJECT_NAME})
+
+install(DIRECTORY include/ DESTINATION include)
 
 install(DIRECTORY 
     launch

@@ -17,7 +17,7 @@
 
 // Include directives for member types
 // Member 'point'
-#include "geometry_msgs/msg/detail/point__struct.hpp"
+#include "geometry_msgs/msg/detail/point32__struct.hpp"
 
 #ifndef _WIN32
 # define DEPRECATED__interfaces__srv__Distance_Request __attribute__((deprecated))
@@ -51,12 +51,12 @@ struct Distance_Request_
 
   // field types and members
   using _point_type =
-    geometry_msgs::msg::Point_<ContainerAllocator>;
+    geometry_msgs::msg::Point32_<ContainerAllocator>;
   _point_type point;
 
   // setters for named parameter idiom
   Type & set__point(
-    const geometry_msgs::msg::Point_<ContainerAllocator> & _arg)
+    const geometry_msgs::msg::Point32_<ContainerAllocator> & _arg)
   {
     this->point = _arg;
     return *this;

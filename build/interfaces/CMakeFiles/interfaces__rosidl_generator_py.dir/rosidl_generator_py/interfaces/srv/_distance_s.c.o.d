@@ -208,6 +208,6 @@ CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/sr
  /usr/include/python3.10/numpy/__multiarray_api.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
  /home/user/ros2_teaching/build/interfaces/rosidl_generator_c/interfaces/srv/detail/distance__struct.h \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.h \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__struct.h \
  /home/user/ros2_teaching/build/interfaces/rosidl_generator_c/interfaces/srv/detail/distance__functions.h \
  /home/user/ros2_teaching/build/interfaces/rosidl_generator_c/interfaces/msg/rosidl_generator_c__visibility_control.h

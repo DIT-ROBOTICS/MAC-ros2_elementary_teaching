@@ -1,14 +1,15 @@
 <launch>
 
-    <node pkg="homework" exec="Client" name="Chassis"/>
-    <node pkg="homework" exec="Server" name="Lidar"/>
-
-    <node pkg="homework" exec="Publisher" name="publisher">
+    <!-- TODO: rename server node to Tower -->
+    <node pkg="homework" exec="Server" name="Tower" output="screen" />
+    <!-- TODO: rename client node to Chassis -->
+    <node pkg="homework" exec="Client" name="Chassis" output="screen" />
+    <!-- TODO: rename topic name to /number -->
+    <node pkg="homework" exec="Publisher" name="Publisher" output="screen">
         <remap from="/topic" to="/number"/>
     </node>
 
-    <node pkg="homework" exec="Subscriber" name="subscription">
+    <node pkg="homework" exec="Subscriber" name="Subscriber" output="screen">
         <remap from="/topic" to="/number"/>
     </node>
-
 </launch>

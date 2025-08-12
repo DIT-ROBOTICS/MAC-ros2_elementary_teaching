@@ -19,12 +19,12 @@ extern "C"
 
 // Include directives for member types
 // Member 'point'
-#include "geometry_msgs/msg/detail/point__struct.h"
+#include "geometry_msgs/msg/detail/point32__struct.h"
 
 /// Struct defined in srv/Distance in the package interfaces.
 typedef struct interfaces__srv__Distance_Request
 {
-  geometry_msgs__msg__Point point;
+  geometry_msgs__msg__Point32 point;
 } interfaces__srv__Distance_Request;
 
 // Struct for a sequence of interfaces__srv__Distance_Request.

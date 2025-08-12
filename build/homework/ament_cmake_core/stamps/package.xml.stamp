@@ -12,8 +12,8 @@
   <depend>std_msgs</depend>
   <depend>geometry_msgs</depend>
   <depend>rclcpp</depend>
-  <!-- TODO: add dependency for interfaces-->
-  <!-- TODO: add execute dependency for launch file-->
+  <depend>interfaces</depend>
+  <exec_depend>launch_hw</exec_depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>

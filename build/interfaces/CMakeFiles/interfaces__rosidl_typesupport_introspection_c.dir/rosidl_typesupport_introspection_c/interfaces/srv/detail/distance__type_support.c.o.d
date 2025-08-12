@@ -58,11 +58,11 @@ CMakeFiles/interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /home/user/ros2_teaching/build/interfaces/rosidl_generator_c/interfaces/msg/rosidl_generator_c__visibility_control.h \
  /home/user/ros2_teaching/build/interfaces/rosidl_generator_c/interfaces/srv/detail/distance__struct.h \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.h \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point.h \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__functions.h \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__struct.h \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point32.h \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__functions.h \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_c__visibility_control.h \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__type_support.h \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__rosidl_typesupport_introspection_c.h \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__type_support.h \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__rosidl_typesupport_introspection_c.h \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h \
  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/service_introspection.h

@@ -42,9 +42,9 @@ class Metaclass_Distance_Request(type):
             cls._TYPE_SUPPORT = module.type_support_msg__srv__distance__request
             cls._DESTROY_ROS_MESSAGE = module.destroy_ros_message_msg__srv__distance__request
 
-            from geometry_msgs.msg import Point
-            if Point.__class__._TYPE_SUPPORT is None:
-                Point.__class__.__import_type_support__()
+            from geometry_msgs.msg import Point32
+            if Point32.__class__._TYPE_SUPPORT is None:
+                Point32.__class__.__import_type_support__()
 
     @classmethod
     def __prepare__(cls, name, bases, **kwargs):
@@ -63,19 +63,19 @@ class Distance_Request(metaclass=Metaclass_Distance_Request):
     ]
 
     _fields_and_field_types = {
-        'point': 'geometry_msgs/Point',
+        'point': 'geometry_msgs/Point32',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.NamespacedType(['geometry_msgs', 'msg'], 'Point'),  # noqa: E501
+        rosidl_parser.definition.NamespacedType(['geometry_msgs', 'msg'], 'Point32'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        from geometry_msgs.msg import Point
-        self.point = kwargs.get('point', Point())
+        from geometry_msgs.msg import Point32
+        self.point = kwargs.get('point', Point32())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -123,10 +123,10 @@ class Distance_Request(metaclass=Metaclass_Distance_Request):
     @point.setter
     def point(self, value):
         if __debug__:
-            from geometry_msgs.msg import Point
+            from geometry_msgs.msg import Point32
             assert \
-                isinstance(value, Point), \
-                "The 'point' field must be a sub message of type 'Point'"
+                isinstance(value, Point32), \
+                "The 'point' field must be a sub message of type 'Point32'"
         self._point = value
 
 

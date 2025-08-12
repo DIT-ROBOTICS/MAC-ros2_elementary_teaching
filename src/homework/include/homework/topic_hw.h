@@ -7,9 +7,6 @@
 #include <memory>
 #include <string>
 
-using std::placeholders::_1;
-using namespace std::chrono_literals;
-
 class pub : public rclcpp::Node{
 
   public:
@@ -19,6 +16,7 @@ class pub : public rclcpp::Node{
     void timer_callback();
 
     rclcpp::Publisher<std_msgs::msg::Int64>::SharedPtr publisher_;
+    
     rclcpp::TimerBase::SharedPtr timer_;
     std_msgs::msg::Int64 msg;
 };
@@ -29,6 +27,6 @@ class sub : public rclcpp::Node{
     sub();
 
   private:
-    void topic_callback(const std_msgs::msg::Int64 & msg);
+    void topic_callback(const std_msgs::msg::Int64::SharedPtr msg);
     rclcpp::Subscription<std_msgs::msg::Int64>::SharedPtr subscription_;
 };

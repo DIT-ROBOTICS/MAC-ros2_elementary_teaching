@@ -2,12 +2,12 @@
 // with input from interfaces/srv/Distance.srv
 // generated code does not contain a copyright notice
 
-#include "geometry_msgs/msg/Point.idl"
+#include "geometry_msgs/msg/Point32.idl"
 
 module interfaces {
   module srv {
     struct Distance_Request {
-      geometry_msgs::msg::Point point;
+      geometry_msgs::msg::Point32 point;
     };
     struct Distance_Response {
       float dis;

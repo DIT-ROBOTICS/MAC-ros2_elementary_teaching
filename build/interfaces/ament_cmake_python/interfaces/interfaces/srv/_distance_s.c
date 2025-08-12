@@ -17,9 +17,9 @@
 #include "interfaces/srv/detail/distance__functions.h"
 
 ROSIDL_GENERATOR_C_IMPORT
-bool geometry_msgs__msg__point__convert_from_py(PyObject * _pymsg, void * _ros_message);
+bool geometry_msgs__msg__point32__convert_from_py(PyObject * _pymsg, void * _ros_message);
 ROSIDL_GENERATOR_C_IMPORT
-PyObject * geometry_msgs__msg__point__convert_to_py(void * raw_ros_message);
+PyObject * geometry_msgs__msg__point32__convert_to_py(void * raw_ros_message);
 
 ROSIDL_GENERATOR_C_EXPORT
 bool interfaces__srv__distance__request__convert_from_py(PyObject * _pymsg, void * _ros_message)
@@ -59,7 +59,7 @@ bool interfaces__srv__distance__request__convert_from_py(PyObject * _pymsg, void
     if (!field) {
       return false;
     }
-    if (!geometry_msgs__msg__point__convert_from_py(field, &ros_message->point)) {
+    if (!geometry_msgs__msg__point32__convert_from_py(field, &ros_message->point)) {
       Py_DECREF(field);
       return false;
     }
@@ -89,7 +89,7 @@ PyObject * interfaces__srv__distance__request__convert_to_py(void * raw_ros_mess
   interfaces__srv__Distance_Request * ros_message = (interfaces__srv__Distance_Request *)raw_ros_message;
   {  // point
     PyObject * field = NULL;
-    field = geometry_msgs__msg__point__convert_to_py(&ros_message->point);
+    field = geometry_msgs__msg__point32__convert_to_py(&ros_message->point);
     if (!field) {
       return NULL;
     }
