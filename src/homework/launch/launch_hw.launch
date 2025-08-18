@@ -1,7 +1,17 @@
 <launch>
+    <!-- HW_1 publisher node, topic remapped to /number -->
+    <node pkg="homework" exec="publisher" name="publisher" output="screen">
+        <remap from="topic" to="/number"/>
+    </node>
 
-    <!-- TODO: rename server node to Tower -->
-    <!-- TODO: rename client node to Chassis -->
-    <!-- TODO: rename topic name to /number -->
+    <!-- HW_1 subscriber node, topic remapped to /number -->
+    <node pkg="homework" exec="subscriber" name="subscriber" output="screen">
+        <remap from="topic" to="/number"/>
+    </node>
 
+    <!-- HW_2 server node, renamed to Tower -->
+    <node pkg="homework" exec="server" name="Tower" output="screen"/>
+
+    <!-- HW_2 client node, renamed to Chassis -->
+    <node pkg="homework" exec="client" name="Chassis" output="screen"/>
 </launch>
