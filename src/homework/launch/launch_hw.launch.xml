@@ -1,0 +1,17 @@
+<launch>
+
+    <!-- TODO: rename server node to Tower -->
+    <node pkg="homework" exec="server" name="Tower" output="screen">
+    </node>
+    <!-- TODO: rename client node to Chassis -->
+    <node pkg="homework" exec="client" name="Chassis" output="screen">
+    </node>
+    <!-- TODO: rename topic name to /number -->
+    <node pkg="homework" exec="publisher" output="screen">
+        <remap from="topic" to="number"/>
+    </node>
+    <node pkg="homework" exec="subscription" output="screen">
+        <remap from="topic" to="number"/>
+    </node>
+
+</launch>
